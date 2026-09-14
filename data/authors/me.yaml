@@ -7,22 +7,21 @@ name:
   family: Johnson
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
+  pronouns: 
 postnominals:
   - PhD
   - MIEEE
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: 
+role: Master Student
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  I'm currently looking for an internship or a work-tudy contract
+  I'm also interested in hearing about new projects and opportunities. 
+  Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: 
+    url: 
 
 links:
   - icon: at-symbol
@@ -40,30 +39,30 @@ links:
     url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Large Language Models
+  - Economics
   - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Econometrics
+  - Machine Learning
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: MS Econometrics and Data Science
+    institution: Aix-Marseille Université
+    start: 2025-2027
+    end: 
     summary: |
       Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
     button:
       text: Download dissertation
       url: /resume.pdf
       icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+  - degree: MS European Economics
+    institution: Tübingen Universität
+    start: 2025-2027
+    end:
+  - degree: Magistere Economics Engineer
+    institution: Aix-Marseille Université
+    start: 2024-2027
+    end:
 
 experience:
   - role: Senior AI Research Scientist
