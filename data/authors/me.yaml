@@ -47,7 +47,7 @@ interests:
 education:
   - degree: MS Econometrics and Data Science
     institution: Aix-Marseille Université
-    start: 2025-2027
+    start: 2025
     end: 
     summary: |
       Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
@@ -57,30 +57,48 @@ education:
       icon: hero/arrow-down-tray
   - degree: MS European Economics
     institution: Tübingen Universität
-    start: 2025-2027
-    end:
+    start: 2025
+    end: 2027
   - degree: Magistere Economics Engineer
     institution: Aix-Marseille Université
-    start: 2024-2027
-    end:
+    start: 2024
+    end: 2027
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Statistician
+    org: INSEE
+    start: 2025-05
+    end : 2025-06
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+      Studies and Distribution Department. Data analysis and literature review on the local Blue Economy
     button:
       text: View portfolio
       url: /
       icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+  - role: Summer Intern
+    org: BNP Paribas PF
+    start: 2025-09
+    end: 2019-10
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
-
+      Collections phone service. Calling and following up with clients.
+- role: Summer Intern
+    org: LCL
+    start: 2024-08
+    end: 2024-09
+    summary: |
+      Personal & Business Banking Agency. Customer reception and contact at the counter and on the phone.
+- role: Summer Intern
+    org: Societe Generale
+    start: 2023-08
+    end: 2023-09
+    summary: |
+      Back-office. General administrative tasks.
+- role: Summer Intern
+    org: LCL
+    start: 2022-08
+    end: 2022-09
+    summary: |
+      Back-office. General administrative tasks.
 skills:
   - name: Technical Skills
     items:
