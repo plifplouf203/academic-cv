@@ -203,8 +203,7 @@ of monetary policy on aggregate demand. It is comprised of a weighted average be
 interest rate gap (𝑟̂t) and deviations in the real exchange rate from its trend (𝑧̂t). A positive mci 
 indicates tight monetary conditions so b2 has a negative sign.
 
-![Description of image](equations.png)
-{{< figure src="results-chart.jpg" title="Figure 1: Research Results" >}
+![Description of image](equations.png "Figure 1: Research Results")
 
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
