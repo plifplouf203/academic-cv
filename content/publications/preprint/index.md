@@ -1,4 +1,4 @@
----
+<img width="601" height="270" alt="equations" src="https://github.com/user-attachments/assets/ee48dfaa-57f3-45c8-b03e-3579bb7e6edc" />---
 title: "An example preprint / working paper"
 authors:
 - me
@@ -202,6 +202,9 @@ The output gap (ŷt) is a function of its lag and its expected value, a monetar
 of monetary policy on aggregate demand. It is comprised of a weighted average between the real 
 interest rate gap (𝑟̂t) and deviations in the real exchange rate from its trend (𝑧̂t). A positive mci 
 indicates tight monetary conditions so b2 has a negative sign.
+
+![Description of image](equations.png)
+{{< figure src="results-chart.jpg" title="Figure 1: Research Results" >}
 
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
