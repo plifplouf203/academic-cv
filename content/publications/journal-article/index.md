@@ -11,7 +11,7 @@ date: "2015-09-01T00:00:00Z"
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
 
-# Publication type.
+# Publication type.  
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
 publication_types: ["article-journal"]
@@ -92,7 +92,23 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+## Introduction
 
+The calibration of monetary policy is particularly challenging at a time of large shocks to inflation 
+and output. In 2022, Hungary faced its biggest headline inflation since the start of the century, 
+peaking above 20 %. This disruption was global and hit strongly the whole European continent, 
+consequence of a general post-pandemic consumption shock and Russia’s agression war against 
+Ukraine among other factors. In this context, the Hungarian economy suffered the highest inflation 
+among its neighbours through, notably due to its dependence on imports as a small open economy. 
+However, this same country achieved a rapid disinflation the year after relative to historical records,
+beating most expectations. At the end of 2023, the Magyar Nemzeti Bank (hungarian for The 
+Hungarian National Bank or MNB) had successfully brought inflation back below 5 % by adopting 
+a tight monetary policy throughout the year. This decision was motivated by a still unstable 
+international environment and fears of second-round inflation expectations. In fact, balancing the 
+risks of loosening too quickly and inflation taking longer to sustainably return to target against 
+those of loosening too slowly with larger costs to output requires careful calibration. The pace and 
+extent of future easing depends on the drivers of recent inflation, the state of the economy, and lags 
+in the transmission mechanism. 
 > [!NOTE]
 > Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 
