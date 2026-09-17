@@ -41,7 +41,7 @@ funding:
     grant: "NSF-1234567"
 
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
+---
 Introduction
 The calibration of monetary policy is particularly challenging at a time of large shocks to inflation 
 and output. In 2022, Hungary faced its biggest headline inflation since the start of the century, 
@@ -110,7 +110,7 @@ of equations, the transmission mechanisms and the calibration. Section 2 gives e
 about the particular context of Hungary at this period, the expectation about what were to come in 
 2023 and further motivation for our design choices. Finally, section 3 compiles our forecasts 
 construction and the linked results and evaluation.
-
+---
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
