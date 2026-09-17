@@ -1,4 +1,4 @@
-<img width="601" height="270" alt="equations" src="https://github.com/user-attachments/assets/ee48dfaa-57f3-45c8-b03e-3579bb7e6edc" />---
+---
 title: "An example preprint / working paper"
 authors:
 - me
