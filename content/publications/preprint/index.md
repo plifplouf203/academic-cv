@@ -80,6 +80,7 @@ projects:
 slides: ""
 ---
 ## Introduction
+
 The calibration of monetary policy is particularly challenging at a time of large shocks to inflation 
 and output. In 2022, Hungary faced its biggest headline inflation since the start of the century, 
 peaking above 20 %. This disruption was global and hit strongly the whole European continent, 
@@ -95,6 +96,7 @@ risks of loosening too quickly and inflation taking longer to sustainably return
 those of loosening too slowly with larger costs to output requires careful calibration. The pace and 
 extent of future easing depends on the drivers of recent inflation, the state of the economy, and lags 
 in the transmission mechanism. 
+
 But this success was not without its consequences. quarterly GDP growth fell in 2024, going several
 times in the negative domain. Such an observation may bring back discussion around the notion of 
 sacrifice ratio [Okun, 1978] which measures the tradeoff between inflation stabilization and output 
@@ -110,6 +112,7 @@ expectations, aggregate demand, and the exchange rate simultaneously. If these c
 each other, the central bank can achieve a substantial reduction in inflation without requiring an 
 equally substantial contraction in output. Coincidentally, the setting they chose is also Hungary, but 
 in the 1990s.
+
 On the other end, our framework differs completely. We chose to work on an IMF’s Quarterly 
 Projection Model (QPM), a semi-structural New Keynesian model, incorporating nominal rigidities 
 and rational expectations. While easing inflation pressures suggest that qualitatively the monetary 
@@ -120,6 +123,7 @@ projections for monetary policy and the economy are therefore internally consist
 also forward-looking. So what matters is the expected paths for interest rates and inflation, not just 
 rates today. This model is a tool of the Forecasting and Policy Analysis System (FPAS) of numerous
 central banks around the world, tailored and extended to the specific context of each economy.
+
 Thus, this framework allows us to test alternative monetary policy rules in a pseudo-out-of-sample 
 forecasting exercise. The objective is to test whether a loosened monetary policy could have 
 induced a « softer landing », up to the point if a « painless disinflation » was effectively possible. 
@@ -131,6 +135,7 @@ stability being a non-binding secondary objective. It is also the case of the MN
 inflation target to 3% [MNB, 2013]. Our work is rather focused on what the monetary authority 
 should do when we are past this spike, in a context where fast disinflation is likely. Although it 
 represents an exceptional setting, we consider this work to be an humble contribution to the topic.
+
 Our period of observations ranges from 1999Q1 to 2025Q3. We reject previous periods for lack of 
 data availability and quality. Our pseudo-out-of-sample forecasting period starts in 2023Q1 to end 
 in 2025Q4. Our baseline conclusions are in line with the literature aforementioned where the 
@@ -142,11 +147,13 @@ quadratic loss function, the latter scenario is computed to be preferable. Howev
 alternative rules highlight especially that the monetary policy had little effect on disinflation in this 
 situation. Moreover, it shows that a standard Taylor rule (as the default one included in the QPM) is 
 inefficient to produce an effective monetary policy in this context.
+
 The following content is divided in three sections. Section 1 presents the model, the different block 
 of equations, the transmission mechanisms and the calibration. Section 2 gives extented information
 about the particular context of Hungary at this period, the expectation about what were to come in 
 2023 and further motivation for our design choices. Finally, section 3 compiles our forecasts 
 construction and the linked results and evaluation.
+
 ## 1. The Model
 ### 1.1 Canonical Version of the QPM
 The basic version of the QPM model (also referred to as the canonical QPM) was proposed by the 
@@ -161,18 +168,21 @@ economic agents or firms. Some parts of the model are ad hoc, so they differ fro
 equations in DSGE models. Such parts are there to help us better approximate the data. Unlike 
 DSGE models, equation coefficients in the QPM are not derived from deep structural parameters, 
 such as discount factor or risk aversion, but the coefficients are directly calibrated.
+
 The title « canonical » stems from several reasons. The basic QPM assumes an inflation targeting 
 central bank, which uses the interest rate as a key policy variable, a flexible exchange rate 
 determination and rationnal expectations. The latter means that when agents build their expectations
 about macroeconomic variables, like inflation or exchange rate, they would use the model to project
 these variables, and use the projections as their best guess or expectations about the inflation and 
 exchange rates in the future.
+
 It is a structural model because each key equation has an economic interpretation, but the equations 
 are not fully micro-founded. In other words, for every key equation that exists in the model we can 
 explain an underlying economic mechanism that this equation approximates. The QPM is a general 
 equilibrium model because it describes how the equilibrium is established in the economy as a 
 whole, and not only in some particular markets or sectors. The model is stochastic because it allows
 for stochastic shocks in its equations.
+
 Finally, this framework does not include all sectors of the economy explicitly (endogenous fiscal 
 and financial sectors, export industries…) and specific country features (dollarization, imperfect 
 central bank credibility…). This goes beyond the scope of this work. More importantly, it matters to
@@ -180,6 +190,7 @@ stress that this model is neither a pure forecasting device (as a VAR would be) 
 explicit discussion of optimality (in the absence of microeconomic foundations). It was first and 
 foremost created to foster discussions around economic policy through a meaningful and 
 transparent model.
+
 The model expresses each variable in terms of its deviation from equilibrium, in other words in 
 ”gap” terms. This canonical/basic version consists of four blocks, namely: aggregate demand, 
 inflation dynamics, exchange rate dynamics, and monetary policy reaction function. Gap terms are 
