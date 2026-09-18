@@ -202,12 +202,12 @@ The output gap ($\hat{y}_{t}$) is a function of its lag and its expected value, 
 
 <div>
 $$
-\begin{aligned}
+
 \hat{y}_{t} &= b_{1}\hat{y}_{t-1}-b_{2}mci_{t}+b_{3}\hat{y}^{*}_{t}+\epsilon^{y}_{t} &&(1)\\
 mci_{t} &= b_{4}\hat{r}_{t} +(1-b_{4})(-\hat{z}_{t}) &&(2)\\
 r_{t} &= i_{t}-E_{t}\left[ \pi_{t+1} \right] &&(3)\\
 z_{t} &= s_{t}+p^{*}_{t}-p_{t} &&(4)
-\end{aligned}
+
 $$
 </div>
 
