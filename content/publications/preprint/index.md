@@ -200,14 +200,14 @@ bar.
 #### Aggregate demand and supply 
 The output gap ($\hat{y}_{t}$) is a function of its lag and its expected value, a monetary conditions index ($mci_{t}$), the foreign output gap ($\hat{y}^{*}_{t}$) and aggregate demand shocks ($\epsilon^{y}_{t}$). The mci captures the impact of monetary policy on aggregate demand. It is comprised of a weighted average between the real interest rate gap ($\hat{r}_{t}$) and deviations in the real exchange rate from its trend ($\hat{z}_{t}$). A positive mci indicates tight monetary conditions so $b_{2}$ has a negative sign.
 
-<div>
+<div style="text-align: center;">
 $$
-\begin{centered}
+\begin{aligned}
 \hat{y}_{t} &= b_{1}\hat{y}_{t-1}-b_{2}mci_{t}+b_{3}\hat{y}^{*}_{t}+\epsilon^{y}_{t} &&(1)\\
 mci_{t} &= b_{4}\hat{r}_{t} +(1-b_{4})(-\hat{z}_{t}) &&(2)\\
 r_{t} &= i_{t}-E_{t}\left[ \pi_{t+1} \right] &&(3)\\
 z_{t} &= s_{t}+p^{*}_{t}-p_{t} &&(4)
-\end{centered}
+\end{aligned}
 $$
 </div>
 
@@ -215,10 +215,10 @@ $$
 Contemporary inflation ($\pi_{t}$) is explained by its value from the previous period, inflation expectations, and real marginal cost ($rmc_{t}$). The latter is determined by the output gap and the real exchange rate gap. In each period, some firms reset their prices to past inflation so $a_{1}$ captures the share of backward-looking firms.
 <div>
 $$
-\begin{}
+\begin{aligned}
 \pi_{t}=a_{1}\pi_{t-1}+(1-a_{1})E_{t}\left[ \pi_{t+1} \right]+a_{2}rmc_{t}+\epsilon^{\pi}_{t}&&(5)\\
 rmc_{t}=a_{3}\hat{y}_{t}+(1-a_{3})\hat{z}_{t}&&(6)
-\end{}
+\end{aligned}
 $$
 </div>
 
