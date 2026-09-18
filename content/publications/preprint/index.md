@@ -216,8 +216,8 @@ Contemporary inflation ($\pi_{t}$) is explained by its value from the previous p
 <div>
 $$
 \begin{aligned}
-\pi_{t}=a_{1}\pi_{t-1}+(1-a_{1})E_{t}\left[ \pi_{t+1} \right]+a_{2}rmc_{t}+\epsilon^{\pi}_{t}&&(5)\\
-rmc_{t}=a_{3}\hat{y}_{t}+(1-a_{3})\hat{z}_{t}&&(6)
+\pi_{t}&=a_{1}\pi_{t-1}+(1-a_{1})E_{t}\left[ \pi_{t+1} \right]+a_{2}rmc_{t}+\epsilon^{\pi}_{t}&&(5)\\
+rmc_{t}&=a_{3}\hat{y}_{t}+(1-a_{3})\hat{z}_{t}&&(6)
 \end{aligned}
 $$
 </div>
@@ -228,8 +228,8 @@ Monetary policy is set according to a standard Taylor rule with a nominal intere
 <div>
 $$
 \begin{aligned}
-i_{t}=g_{1}i_{t-1}+(1-g_{1})\left[ i^{n}_{t} + g_{2}\left(E_{t}\left[\pi_{t+4}  \right]-\pi^{T}_{t+4}  \right) + g_{3}\hat{y}_{t} \right]+\epsilon^{i}_{t}&&(7)\\
-i^{n}_{t}=\bar{r}_{t}+E_{t}\left[\pi^{4}_{t+N}  \right]&&(8)
+i_{t}&=g_{1}i_{t-1}+(1-g_{1})\left[ i^{n}_{t} + g_{2}\left(E_{t}\left[\pi_{t+4}  \right]-\pi^{T}_{t+4}  \right) + g_{3}\hat{y}_{t} \right]+\epsilon^{i}_{t}&&(7)\\
+i^{n}_{t}&=\bar{r}_{t}+E_{t}\left[\pi^{4}_{t+N}  \right]&&(8)
 \end{aligned}
 $$
 </div>
@@ -239,8 +239,8 @@ The nominal exchange rate ($s_{t}$) is determined by a UIP condition with a back
 <div>
 $$
 \begin{aligned}
-s_{t}=s^{e}_{t+1} +\frac{i^{*}_{t}-i_{t}+prem_{t}}{4}+\epsilon^{s}_{t}&&(9)\\
-where\quad s^{e}_{t+1}=\left( 1-e_{1} \right)E_{t}\left[s_{t+1} \right]+e_{1}\left[s_{t-1}+\frac{2}{4}\left( \pi^{T}_{t}-\bar{\pi}^{*}_{t}+\Delta \bar{z_{t}} \right) \right]&&(10)
+s_{t}&=s^{e}_{t+1} +\frac{i^{*}_{t}-i_{t}+prem_{t}}{4}+\epsilon^{s}_{t}&&(9)\\
+where\quad s^{e}_{t+1}&=\left( 1-e_{1} \right)E_{t}\left[s_{t+1} \right]+e_{1}\left[s_{t-1}+\frac{2}{4}\left( \pi^{T}_{t}-\bar{\pi}^{*}_{t}+\Delta \bar{z_{t}} \right) \right]&&(10)
 \end{aligned}
 $$
 </div>
