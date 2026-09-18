@@ -202,21 +202,138 @@ The output gap ($\hat{y}_{t}$) is a function of its lag and its expected value, 
 
 <div>
 $$
-
+\begin{aligned}
 \hat{y}_{t} &= b_{1}\hat{y}_{t-1}-b_{2}mci_{t}+b_{3}\hat{y}^{*}_{t}+\epsilon^{y}_{t} &&(1)\\
 mci_{t} &= b_{4}\hat{r}_{t} +(1-b_{4})(-\hat{z}_{t}) &&(2)\\
 r_{t} &= i_{t}-E_{t}\left[ \pi_{t+1} \right] &&(3)\\
 z_{t} &= s_{t}+p^{*}_{t}-p_{t} &&(4)
-
+\end{aligned}
 $$
 </div>
 
 #### New-keynesian Phillips curve 
-Contemporary inflation ($\pi_{t}$) is explained by its value from the previous period, inflation 
-expectations, and real marginal cost ($rmc_{t}$). The latter is determined by the output gap and the real 
-exchange rate gap. In each period, some firms reset their prices to past inflation so $a_{1}$ captures the share of backward-looking firms.
+Contemporary inflation ($\pi_{t}$) is explained by its value from the previous period, inflation expectations, and real marginal cost ($rmc_{t}$). The latter is determined by the output gap and the real exchange rate gap. In each period, some firms reset their prices to past inflation so $a_{1}$ captures the share of backward-looking firms.
+</div>
+$$
+\begin{aligned}
+\pi_{t}=a_{1}\pi_{t-1}+(1-a_{1})E_{t}\left[ \pi_{t+1} \right]+a_{2}rmc_{t}+\epsilon^{\pi}_{t}&&(5)\\
+rmc_{t}=a_{3}\hat{y}_{t}+(1-a_{3})\hat{z}_{t}&&(6)
+\end{aligned}
+$$
+</div>
 
-![Description of image](equations.png "Figure 1: Research Results")
+#### Interest rates and the policy rule 
+
+Monetary policy is set according to a standard Taylor rule with a nominal interest rate ($i_{t}$). The monetary authority responds to a deviation of inflation from its target ($\pi^{T}$) and to the deviation of output from its potential level. The central bank is forward-looking and cannot influence today’s inflation because of transmission delay. The smoothing component captures the notion that drastic changes are avoided. The neutral interest rate ($i^{n}_{t}$) is not fixed and represents the level of the interest rate at the economy’s full potential. 
+</div>
+$$
+\begin{aligned}
+i_{t}=g_{1}i_{t-1}+(1-g_{1})\left[ i^{n}_{t} + g_{2}\left(E_{t}\left[\pi_{t+4}  \right]-\pi^{T}_{t+4}  \right) + g_{3}\hat{y}_{t} \right]+\epsilon^{i}_{t}&&(7)\\
+i^{n}_{t}=\bar{r}_{t}+E_{t}\left[\pi^{4}_{t+N}  \right]&&(8)
+\end{aligned}
+$$
+</div>
+#### Uncovered interest rate parity (UIP) and the exchange rate 
+
+The nominal exchange rate ($s_{t}$) is determined by a UIP condition with a backward-looking element to capture stickiness in the adjustment of the exchange rate. A more positive value indicates a depreciation. Growth in the trend real exchange rate ($\bar{z_{t}}$) is a weighted average of its lag and a steady-state value. The exchange rate premium is additional premium investors for holding the currency over and above the returns from the real interest rate differential. The exchange rate is measured at each period (so in quarters) but interest rates are and the premium are expressed in annualized rate so we have to scale them. 
+</div>
+$$
+\begin{aligned}
+s_{t}=s^{e}_{t+1} +\frac{i^{*}_{t}-i_{t}+prem_{t}}{4}+\epsilon^{s}_{t}&&(9)\\
+where\quad s^{e}_{t+1}=\left( 1-e_{1} \right)E_{t}\left[s_{t+1} \right]+e_{1}\left[s_{t-1}+\frac{2}{4}\left( \pi^{T}_{t}-\bar{\pi}^{*}_{t}+\Delta \bar{z_{t}} \right) \right]&&(10)
+\end{aligned}
+$$
+</div>
+
+### 1.2 Other Specifities
+#### Foreign Block 
+Unlike in the domestic part of the model, there is no economic structure (or economic 
+interpretation) in the foreign block. All variables in the foreign or external block follow simple, autoregressive processes. This is largely based on the assumption that our model simulate a small open economy that cannot influence the world economy. However, the opposite is not true. Foreign variables will affect the domestic economy through all of the above equations. We estimated for each real commodity price, with the gaps relevant for domestic price pressures. The « foreign economy » is assumed to be summarized by variables for the euro area given Hungary’s close trading links with the block. All the foreign equations are reported in the appendix.
+#### Transmission Channels
+The interest rate and the exchange rate are the two transmission channels. The monetary policy transmission mechanism is summarized by the diagram below : 
+
+![Description of image](trans_channels.png "Figure 1 : Transmission mechanism in the canonical QPM (Source : IMF)")
+
+The transmission starts with the current and expected changes in the policy instrument. In our 
+model, this means that the key policy rate affects the current short-term interest rate and its 
+expected levels. This, in turn, is transmitted to changes in the longer-term rates, which alters aggregate monetary conditions, aggregate demand and output, and ultimately inflation. This is the interest rate channel. 
+
+Changes in the interest rate also affect the nominal exchange rate, which is assumed to be flexible in the canonical setup. Further, changes in the exchange rate affect inflation directly via the cost of imported factors of production, and indirectly via changes in the relative prices of imported goods vis-à-vis domestic, and the corresponding shifts in aggregate demand between imported and domestic goods. Because of the changes in aggregate demand for domestically produced goods, domestic output and domestic cost pressures change as well, which then affects inflation.
+
+The resolution of the model begins with assigning a value to each structural parameter. When 
+parameters are properly calibrated, the model should have a unique stable solution (Blanchard-Kahn condition [Blanchard et al., 1980]). The dedicated software manages the computation of algorithms.
+#### Calibration and Parameters Values
+As in most QPMs, parameter values are assigned through three approaches: estimation from data 
+for available series, calibration from previous studies, and expert judgment. For technical reasons, we relied only on the latter and didn’t perform any estimation ourselves.
+
+Our choice of parameter values follows the initial calibration described by the IMF in their own Hungary QPM [Jackson, 2024]. Although they chose the values corresponding to a period before 2020, their estimated values using Bayesian techniques on their full sample of interest (2006-2024Q1) as a cross-check give very close values. You may refer to this paper for more details. In any case, the model is calibrated to produce plausible impulse responses that also correspond with those from the literature (see section 1.3). 
+
+Steady-state parmeter values are set according to official statements of the MNB, ECB and the IMF or follow the default IMF recommendation. Standard deviations of shocks were calculated using historical averages with respect to the dedicated QPM procedure. More details on the matter are available in the appendix.
+#### Data
+Data was sourced from various institutional sources. The observation period starts in 1999 on a 
+quarterly basis. All data was seasonally adjusted. More information in the appendix.
+### 1.3 Impulse Response Functions (IRFs)
+The model is calibrated to be broadly similar to previous trusted external estimates of other 
+macroeconomic models dedicated to the Hungarian economy [Jackson, 2024 ; Szilágyi et al., 2013].
+The series of graphs below describe the response of key variables to a 1.0 percentage point shock.
+
+All IRFs can be found in the Appendix. A 1pp temporary but persistent increase in the policy rate reduces the level of the output gap by almost 0.2 percent and reduces inflation by a peak of close to 0.4pp (Figure 2). This implies a low sacrifice ratio. YoY CPI inflation also falls quite quickly : the peak impact is reached under a year and comes back to normal after two years. Both these features reflect the importance of the exchange rate channel in Hungary, consistent with the findings of the aforementionned papers.
+![Description of image](IRF_comparison.png "Figure 2 : IRFs of Szilágyi et al. model (left) VS. our QPM (right) under a monetary policy shock")
+
+The response to a cost-push shock explains further the functioning of our model (Figure 3). The 
+increase in inflation triggers an immediate response from the central bank, causing the real interest rate to become substantially more restrictive. At the same time, the exchange rate depreciates and continues to tighten the monetary conditions. The resulting contraction in aggregate demand generates a temporary negative output gap of -0.015pp. The output cost is relatively small in this case. It does not conform to a textbook « painless » reaction to an inflationary scenario but it remains low-cost and doesn’t go completely against it either. 
+
+![Description of image](IRF_square.png "Figure 3 : IRFs of our QPM under a cost-push shock")
+
+## 2. Context
+### 2.1 The Post-Covid Inflation
+The context regarding Hungary’s recent disinflation episode was not simply the mechanical reversal of the 2022 inflation shock, but rather the gradual unwinding of several mutually reinforcing sources of inflationary pressure. One side of the post-Covid dynamics can be explained by foreign shocks have played an important role in disrupting price stability, encompassing both demand shocks, such as deferred post-pandemic global consumption, and supply shocks, including disruptions to global value chains and the impact of Russia’s war of aggression against Ukraine. 
+This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et al., 2024] but also for all Central Europpean countries [Šestořád et al., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et al. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate[^1]. [^1]: As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
+
+The MNB responded with a strong demonstration of the role of monetary policy as a stabilizing 
+force. Among the first in Europe to act, the MNB signaled heightened inflationary risks in early 2021 and promptly began raising interest rates. To restore price stability, the MNB undertook the largest cumulative rate hikes among EU countries, further underscoring the central role of monetary policy in counteracting inflation. Although the intervention was strong, it is to be noted that some observers view it as late, as the ECB took action in 2022Q2 whereas the MNB did so only in September of the same year. Nevertheless, this decisive policy led to inflation peaking in early 2023, followed by a period of rapid disinflation.  
+
+The Kalman filter decomposition of qoq inflation in our QPM broadly supports this narrative 
+(Figure 4). The exceptionally large inflation episode in 2022 is initially dominated by shock and real-exchange-rate components, consistent with the above statements.
+
+![Description of image](kalman.png "Figure 4 : QPM’s Kalman filter decomposition of quarter-on-quarter inflation")
+
+### 2.2 A Situation of Disinflation
+Our period of study begins at the peak of the inflation episode. A few months into 2023, the general sentiment was in favor of an overturn of past-year’s dynamics. First, it is to be seen that the forint gradually strengthened against the euro since late 2022, showing a solid 3.5% appreciation between the two quarters. It is also partly owing to positive developments regarding the EU funding as negociations were announced to start over again. External shocks have faltered with a slowdown of global economic activity and decreasing in energy prices and global food base material prices. Internally, the situation is much stable too. The tight monetary policy is proving to influence the monetary conditions allowing them to exert their disinflationary impact in a widening range. At the same time, the decline in domestic demand narrows enterprises’ room for manoeuvre in pricing. The MNB’s quarterly inflation reports are particularly insightful on the matter. From March 2023, the central bank announces that « the consumer price index in Hungary is expected to decline moderately in the coming months, followed by an acceleration in the disinflationary process in the second half of the year » and that « the consumer price index is expected to return to the central bank tolerance band in 2024 » [MNB, 2023]. The projection from the Q1 report displays a corresponding sharp fall in inflation (Figure 5). Despite not finding access to the exaxt figures, it is strikingly close to our own model’s forecast, reinforcing the relevance of our design choices and calibration.
+
+![Description of image](forecast_vs.png "Figure 5 : Year-on-year inflation forecast of the MNB (left) VS. our QPM (right)")
+
+The large tolerance bands characterise nonetheless great uncertainty regarding the outlook. In our projection, the tolerance is represented by 30 %, 60 % and 90 % probability bands. However, it is far from enough to offset the base disinflation scenario. In conclusion, most indicators pointed to a clear return to normal metrics in a fast manner, the actual development proved this manner to be historically short. In Europe, the sentiment was shared with more moderation. In a speech from March 2023, the president of the ECB Christine Lagarde starts the speech by announcing that « headline inflation is likely to decline steeply this year » while also acknowledging « underlying inflation dynamics remain strong » [ECB, 2023].
+## 3. Forecast
+We run our model through a pseudo-oos forecast exercise. The objective is to test the sensitivity of our model-dictated monetary policy by modifying the parameters value of the interest-rate rule equation (namely $g_{1-3}$). We evaluate our forecasts with a standard quadratic loss function.
+### 3.1 In-sample Simulations
+In order to assess the ability of our QPM to capture the salient properties of available data, we perform an in-sample simulation exercise. More precisely, we run recursive one- to eight-quarter ahead forecasts for the period 1999Q1-2023Q1, conditioning on the full sample estimates for the trajectories of foreign variables, output trend, real exchange rate trend, inflation target. As compared to an actual real-time forecasting exercise, we don’t consider any near-term forecasts or expert judgments. The results for a subset of observed variables are presented in the figure below (Figure 6). The recursive in-sample model simulations are represented with various colors, while actual data is displayed in black lines. See the appendix for the full set. 
+
+![Description of image](in_sample.png "Figure 6 : In-sample forecasts and actual data (black)")
+
+For most variables, the model matches actual data reasonably well. Despite occasional visible 
+forecast errors for all variables, to a large extent, the QPM manages to capture the relevant turning points in most indicators. Some of the measurements suffer for under- and/or overshooting in periods of high volatility. It is expected as the standard QPM is noted to not be particularly performant in case of an exceptional crisis. For example, the output gap in-sample simulations shows a strong under-evaluation of the pandemic crisis and the model consistently  undershoot the 2022 inflation spike. It also made it so that tuning some of the parameters and/or steady-state values did not substantially improve the model’s accuracy while straying us further away from previous experts judgments and calibration. Hence, we decided to keep our initial calibration untouched.
+### 3.2 The Policy Loss Function
+To evaluate alternative monetary policy rules, we use a quadratic loss function that captures the central bank’s trade-offs between inflation stabilization, output stabilization, and interest-rate smoothing. The specification is inspired by the conclusions of a report by the IMF Research Department [Debortoli et al., 2019] that motivates the addition of economic activity’s measurements when designing loss functions for central banks. Such factors are driven by the will to better approximate social welfare, especially in our case where the strong disinflation led to a sharp detrioration in GDP growth. The period loss is given by
+</div>
+$$
+\begin{aligned}
+L_{t}= \omega_{\pi}\left( \frac{\pi_{t}-\pi^{*}_{t}}{\sigma_{\pi}} \right)^{2}+\omega_{y}\left( \frac{y^{gap}_{t}}{\sigma_{y}} \right)^{2}+\omega_{\Delta i}\left(\frac{\Delta i_{t}}{\sigma_{\Delta i}}  \right)^{2}&&(11)
+\end{aligned}
+$$
+</div>
+where inflation deviations, the output gap, and changes in the policy rate are normalized by their respective historical standard deviations σ. This normalization puts the three components on comparable scales, while the weights determine their relative importance in the policymaker’s objective. Future losses are discounted using a quarterly discount factor β. Considering the horizon length, we fix β = 0.95. Thus, the total loss over the policy horizon is :
+</div>
+$$
+\begin{aligned}
+L = \sum_{t=0}^{T-1}\beta^{t}L_{t}&&(12)
+\end{aligned}
+$$
+</div>
+
+We run our model on two sets of weights level (Table 1). The first set puts more emphasis on 
+inflation, while the second one allows for an equal influence of both price stability and economic activity. A third set giving more importance to the output gap was not selected as the MNB Founding Act still explicitly mentions that its primary objective shall be to achieve and maintain price stability. This third set would have been highly likely to be unfeasible. On the other side, putting an stronger weight on price stability is contrary to our topic, and so, not relevant.
+
 
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
