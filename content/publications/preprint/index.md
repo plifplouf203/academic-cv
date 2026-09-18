@@ -1,5 +1,6 @@
 ---
 title: "An example preprint / working paper"
+math: true
 authors:
 - me
 date: "2019-04-07T00:00:00Z"
