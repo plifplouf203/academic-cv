@@ -63,8 +63,8 @@ hugoblox:
     # Theme pack: name from data/fonts/
     pack: "academic"
   features:
-  math:
-    enable: true
+    math:
+      enable: true
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
   # Spacing and shape tokens
