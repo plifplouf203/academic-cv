@@ -213,7 +213,7 @@ $$
 
 #### New-keynesian Phillips curve 
 Contemporary inflation ($\pi_{t}$) is explained by its value from the previous period, inflation expectations, and real marginal cost ($rmc_{t}$). The latter is determined by the output gap and the real exchange rate gap. In each period, some firms reset their prices to past inflation so $a_{1}$ captures the share of backward-looking firms.
-</div>
+<div>
 $$
 \begin{aligned}
 \pi_{t}=a_{1}\pi_{t-1}+(1-a_{1})E_{t}\left[ \pi_{t+1} \right]+a_{2}rmc_{t}+\epsilon^{\pi}_{t}&&(5)\\
@@ -225,7 +225,7 @@ $$
 #### Interest rates and the policy rule 
 
 Monetary policy is set according to a standard Taylor rule with a nominal interest rate ($i_{t}$). The monetary authority responds to a deviation of inflation from its target ($\pi^{T}$) and to the deviation of output from its potential level. The central bank is forward-looking and cannot influence today’s inflation because of transmission delay. The smoothing component captures the notion that drastic changes are avoided. The neutral interest rate ($i^{n}_{t}$) is not fixed and represents the level of the interest rate at the economy’s full potential. 
-</div>
+<div>
 $$
 \begin{aligned}
 i_{t}=g_{1}i_{t-1}+(1-g_{1})\left[ i^{n}_{t} + g_{2}\left(E_{t}\left[\pi_{t+4}  \right]-\pi^{T}_{t+4}  \right) + g_{3}\hat{y}_{t} \right]+\epsilon^{i}_{t}&&(7)\\
@@ -236,7 +236,7 @@ $$
 #### Uncovered interest rate parity (UIP) and the exchange rate 
 
 The nominal exchange rate ($s_{t}$) is determined by a UIP condition with a backward-looking element to capture stickiness in the adjustment of the exchange rate. A more positive value indicates a depreciation. Growth in the trend real exchange rate ($\bar{z_{t}}$) is a weighted average of its lag and a steady-state value. The exchange rate premium is additional premium investors for holding the currency over and above the returns from the real interest rate differential. The exchange rate is measured at each period (so in quarters) but interest rates are and the premium are expressed in annualized rate so we have to scale them. 
-</div>
+<div>
 $$
 \begin{aligned}
 s_{t}=s^{e}_{t+1} +\frac{i^{*}_{t}-i_{t}+prem_{t}}{4}+\epsilon^{s}_{t}&&(9)\\
