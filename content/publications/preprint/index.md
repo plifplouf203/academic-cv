@@ -197,11 +197,17 @@ inflation dynamics, exchange rate dynamics, and monetary policy reaction functio
 written with a hat, foreign variables with a star and those measured by their long-run equilibrium a 
 bar.
 #### Aggregate demand and supply 
-The output gap (ŷt) is a function of its lag and its expected value, a monetary conditions index 
-(𝑚𝑐𝑖t), the foreign output gap (ŷt∗) and aggregate demand shocks (𝜖ty). The mci captures the impact 
-of monetary policy on aggregate demand. It is comprised of a weighted average between the real 
-interest rate gap (𝑟̂t) and deviations in the real exchange rate from its trend (𝑧̂t). A positive mci 
-indicates tight monetary conditions so b2 has a negative sign.
+The output gap ($\hat{y}_{t}$) is a function of its lag and its expected value, a monetary conditions index ($mci_{t}$), the foreign output gap ($\hat{y}^{*}_{t}$) and aggregate demand shocks ($\epsilon^{y}_{t}$). The mci captures the impact of monetary policy on aggregate demand. It is comprised of a weighted average between the real interest rate gap ($\hat{r}_{t}$) and deviations in the real exchange rate from its trend ($\hat{z}_{t}$). A positive mci indicates tight monetary conditions so $b_{2}$ has a negative sign.
+
+$$\hat{y}_{t} = b_{1}\hat{y}_{t-1}-b_{2}mci_{t}+b_{3}\hat{y}^{*}_{t}+\epsilon^{y}_{t}\quad(1)\\
+mci_{t} = b_{4}\hat{r}_{t} +(1-b_{4})(-\hat{z}_{t})\quad(2)\\
+r_{t} = i_{t}-E_{t}\left[  \pi_{t+1}\right]\quad(3)\\
+z_{t}=s_{t}+p^{*}_{t}-p_{t}\quad(4)$$
+
+#### New-keynesian Phillips curve 
+Contemporary inflation ($\pi_{t}$) is explained by its value from the previous period, inflation 
+expectations, and real marginal cost ($rmc_{t}$). The latter is determined by the output gap and the real 
+exchange rate gap. In each period, some firms reset their prices to past inflation so $a_{1}$ captures the share of backward-looking firms.
 
 ![Description of image](equations.png "Figure 1: Research Results")
 
