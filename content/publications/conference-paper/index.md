@@ -47,7 +47,9 @@ funding:
   - funder: "European Research Council"
     grant: "ERC-StG-101234"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: This work investigates the modeling and forecasting of financial volatility using daily returns of Oracle Corporation. The analysis combines several families of models, including GARCH-type 
+specifications for conditional volatility, as well as CAViaR and GAS models for tail-risk estimation.
+The objective is to identify models describing accurately the observed volatility and being able to forecast future volatility.
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -196,7 +198,7 @@ $$
 
 The forecast follows : $\sigma^{2}_{t+1|t}=\omega+\alpha\epsilon^{2}_{t}+\lambda\epsilon^{2}_{t}\mathbb{I}\left(\epsilon_{t}\lt 0  \right)+\beta\sigma^{2}_{t|t-1}$
 
-In all cases, the information set is $Z_{t}={r_{t},r_{t-1},...,r_{1}}$ so the forecast is derived from $E[\sigma^{2}_{t+1}|Z_{t}]$.
+In all cases, the information set is $Z_{t}=\left\{r_{t},r_{t-1},...,r_{1}\right\}$ so the forecast is derived from $E[\sigma^{2}_{t+1}|Z_{t}]$.
 
 Now, we are generating a sequence of forecasts for our three models on the last 200 observations (e.g. from 20/10/2025 to 07/08/2026). We use the realized squared returns as a proxy of (realized) volatility and apply two different estimation windows. Firstly, a fixed-scheme where the model is estimated only once on the in-sample period, then a forecast is produced recursively keeping the parameters fixed. Secondly, we exploit a traditional expanding window where the model is fitted anew as each new forecast joins the estimation sample. The two methods output very similar results (figure 6a and 6b). The period is extremely volatile for the ORCL stock and it is not that surprising that the models all fail to predict the numerous spikes throughout this period, whatever the estimation scheme being used.
 
@@ -283,7 +285,7 @@ Here, we will only focus on the GARCH-N model. We produces 21-step ahead forecas
 
 Again, our two new forecatst outputs very similar results between the two estimation schemes and it remains far from the realized series. Now, comparing the single and multi-step forecasts, the one step forecast is more reactive to news (e.g. recent spikes), while the 21-step forecast is smoother as it gazes way forward in the future. But this is not always the case and the multi-step react more strongly to spikes than the one-step. It is a direct consequence of the delay of what’s being included in the information set : our model observes large spikes at a certain period but this information is only included later in the memory and is being retained through memory and persistence. In consequence, it may look as if the 21-step ahead forecasts can react to certain spikes that the one step doesn’t, but it is actually just coincidental seasonality of large shocks. We evaluate those further after computing the loss metrics (table 6a and 6b) : 
 
-| | $GARCH-N\\GARCH-N\\(21-step-ahead)$ | $GARCH-N\\(One-step-ahead-realigned)$ |
+| | $GARCH-N\\(21-step-ahead)$ | $GARCH-N\\(One-step-ahead-realigned)$ |
 | -------------- | ---------|------ | 
 | Fixed-Window  | .60870  | .61268  |  
 | Expanding-Window  | **.60729**  | .61222  |
