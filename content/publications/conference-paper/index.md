@@ -136,15 +136,15 @@ which is a 500 billion dollar investment plan in AI infrastructure copiloted wit
 Softbank with the support of the Trump administration. However, concerns and missed expectations
 surrounding the project subsequently contributed to a sharp decline in the stock price within less 
 than a year.
-[!image](ORCL_Prices_Daily.pdf "Figure 1 : ORCL Daily Prices")
+![image](ORCL_Prices_Daily.pdf "Figure 1 : ORCL Daily Prices")
 
 The log-returns displays that very volatile tendency at the start and end of our period of analysis. 
 Nonetheless, we observe the traditional mean-reverting property of the returns (figure 2a) as well as
 some signs of leverage effect as the squared returns as high-volatility is dominated by the period 
 where Oracle found itself in the most difficult positions (figure 2b).
 
-[!image](ORCL_Log_Returns_Daily.pdf "Figure 2a : ORCL Daily Log-returns")
-[!image](ORCL_Squared_Log_Returns_Daily.pdf "Figure 2b : ORCL Daily Squared Log-returns")
+![image](ORCL_Log_Returns_Daily.pdf "Figure 2a : ORCL Daily Log-returns")
+![image](ORCL_Squared_Log_Returns_Daily.pdf "Figure 2b : ORCL Daily Squared Log-returns")
 
 Our observation of stylized facts is not yet finished. Raw returns show no clear pattern of 
 autocorrelation as shown by the ACF (figure 3a) consistently with the idea that they are difficult to 
@@ -152,8 +152,8 @@ predict from their own past values. On the other hand, the ACF of squared return
 displays a strong memory. Not only does this imply the volatility is persistent as the autocorrelation 
 slowly decays but it also clusters as it remains high above our 95 % confidence dotted box.
 
-[!image](ORCL_Log_Returns_Daily.pdf "Figure 2a : ORCL Daily Log-returns")
-[!image](ORCL_Squared_Log_Returns_Daily.pdf "Figure 2b : ORCL Daily Squared Log-returns")
+![image](ORCL_Log_Returns_Daily.pdf "Figure 2a : ORCL Daily Log-returns")
+![image](ORCL_Squared_Log_Returns_Daily.pdf "Figure 2b : ORCL Daily Squared Log-returns")
 
 
 
