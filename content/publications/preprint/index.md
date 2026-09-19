@@ -315,7 +315,7 @@ For most variables, the model matches actual data reasonably well. Despite occas
 forecast errors for all variables, to a large extent, the QPM manages to capture the relevant turning points in most indicators. Some of the measurements suffer for under- and/or overshooting in periods of high volatility. It is expected as the standard QPM is noted to not be particularly performant in case of an exceptional crisis. For example, the output gap in-sample simulations shows a strong under-evaluation of the pandemic crisis and the model consistently  undershoot the 2022 inflation spike. It also made it so that tuning some of the parameters and/or steady-state values did not substantially improve the model’s accuracy while straying us further away from previous experts judgments and calibration. Hence, we decided to keep our initial calibration untouched.
 ### 3.2 The Policy Loss Function
 To evaluate alternative monetary policy rules, we use a quadratic loss function that captures the central bank’s trade-offs between inflation stabilization, output stabilization, and interest-rate smoothing. The specification is inspired by the conclusions of a report by the IMF Research Department [Debortoli et al., 2019] that motivates the addition of economic activity’s measurements when designing loss functions for central banks. Such factors are driven by the will to better approximate social welfare, especially in our case where the strong disinflation led to a sharp detrioration in GDP growth. The period loss is given by
-</div>
+<div>
 $$
 \begin{aligned}
 L_{t}= \omega_{\pi}\left( \frac{\pi_{t}-\pi^{*}_{t}}{\sigma_{\pi}} \right)^{2}+\omega_{y}\left( \frac{y^{gap}_{t}}{\sigma_{y}} \right)^{2}+\omega_{\Delta i}\left(\frac{\Delta i_{t}}{\sigma_{\Delta i}}  \right)^{2}&&(11)
@@ -323,7 +323,7 @@ L_{t}= \omega_{\pi}\left( \frac{\pi_{t}-\pi^{*}_{t}}{\sigma_{\pi}} \right)^{2}+\
 $$
 </div>
 where inflation deviations, the output gap, and changes in the policy rate are normalized by their respective historical standard deviations σ. This normalization puts the three components on comparable scales, while the weights determine their relative importance in the policymaker’s objective. Future losses are discounted using a quarterly discount factor β. Considering the horizon length, we fix β = 0.95. Thus, the total loss over the policy horizon is :
-</div>
+<div>
 $$
 \begin{aligned}
 L = \sum_{t=0}^{T-1}\beta^{t}L_{t}&&(12)
@@ -335,11 +335,11 @@ We run our model on two sets of weights level (Table 1). The first set puts more
 inflation, while the second one allows for an equal influence of both price stability and economic activity. A third set giving more importance to the output gap was not selected as the MNB Founding Act still explicitly mentions that its primary objective shall be to achieve and maintain price stability. This third set would have been highly likely to be unfeasible. On the other side, putting an stronger weight on price stability is contrary to our topic, and so, not relevant.
 
 
-|  | $\omega_{\pi}$        | $\omega_{y}$ | $\omega_{\Delta i}$ |
+| weight  | $\omega_{\pi}$        | $\omega_{y}$ | $\omega_{\Delta i}$ |
 | ---------- | --------------------- | ------------ | ------------------|
-|(1) Inflation-focused            |  0.7|     0.5    | 0.1  |              
+|(1) Inflation-focused|0.7|     0.5    | 0.1  |              
 |  (2) Balanced          |   0.5   | 0.5          | 0.1  |
-$&&Table 1 : Loss function specifications&&$
+Table 1 : Loss function specifications
 
 ### 3.3 Forecast Results
 
