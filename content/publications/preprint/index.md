@@ -355,9 +355,28 @@ sensibility of our interest rate equation following moderate variations that wou
 decisions if a policymaker were actually to rely on our framework. In consequence, we define our 
 grid as follows (Table 2) :
 
+|  |         | Baseline | |
+| ------------|--------- | ------------- | ------------------- |
+| $g_{1}$ | 0.5 ; 06  |0.7| 0.8 ; 0.9 ; 0.99*   |
+| $g_{2}$ | 0.6 ; 0.8 ; 1 | 1.2 | 1.4 ; 1.6 ; 2  |
+| $g_{3}$ |  0 ; 0.05 ; 0.15 | 0.25|    0.4; 0.5 ; 1|
+*g1 = 1 doesn’t solve the model’s steady-state
+Table 2 : Parameter grid for the policy rule
 
-
-
+The baseline simulation suggests that the disinflation can occur alongside a declining nominal 
+policy rate (Figure 7). During the first quarters, the real interest rate gap shows a strong increase in 
+response to a collapse in inflation expectations. Even if this collapse could be exaggerated from the 
+way we modeled it (purely forward-looking), it still somewhat reflects the strong commitment of 
+the MNB against the inflation when the disinflation period has already started. In an opposite 
+fashion, the real exchange rate response produces a substantial real appreciation. As a result, both 
+components encourages a contraction of the monetary conditions (Eq. 2) and push down the output 
+gap (Eq. 1). Meanwhile, the strenghtening of the forint contributes further to the reduction of 
+inflation through a decrease in real marginal costs. Hence, the central bank can reduce the nominal 
+policy rate without necessarily relaxing the monetary stance. Price stability recovers fast, the target 
+is reached in a span shorter than a year. Finally, all variables are close to reach their steady-state 
+values in 2025Q4 and the model will reach its equilibrium in the first months of 2026. The interest 
+rate and exchange rate channels operating together to a fast disinflation process while inflation 
+expectations fall is a very similar mechanism recorded in the Golinelli et al. [2002] paper. 
 
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
