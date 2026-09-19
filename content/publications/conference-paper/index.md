@@ -221,7 +221,7 @@ $$
 </div>
 
 > [!NOTE]
-> $^{2}$This particular specification can be found in the Appendix. It doesn’t modify whatsoever the value or ranking interpretation compared to the other one written in the same paper.
+> $^{2}$ This particular specification can be found in the Appendix. It doesn’t modify whatsoever the value or ranking interpretation compared to the other one written in the same paper.
 
 where $h_{t}$ is the forecast and $\sigma$ the realization. The results are as follows (table 4a and 4b) :
 
@@ -229,8 +229,8 @@ where $h_{t}$ is the forecast and $\sigma$ the realization. The results are as f
 | -------------- | ---------|------ | -----|
 | Fixed-Window  | .56519  | .56530  | .57614 | 
 | Expanding-Window  | **.56478**  | .56520  | .57572 |
-
 <div style="text-align: center;">Table 4a : MSE Loss for the forecasted squared volatility (scaled by 10$^{5}$)</div>
+
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
 | Fixed-Window  | 1.48062  | 1.42763  | 1.47882 | 
@@ -292,7 +292,7 @@ Again, our two new forecatst outputs very similar results between the two estima
 | Expanding-Window  | **.60729**  | .61222  |
 <div style="text-align: center;">Table 6A : MSE Loss for the 21- versus One-step ahead volatility forecast (scaled by 10$^{5}$)</div>
 
-| | GARCH-N\\GARCH-N\\(21-step-ahead) | GARCH-N\\(One-step ahead realigned) |
+| | $GARCH-N\\(21-step-ahead)$ | $GARCH-N\\(One-step ahead realigned)$ |
 | -------------- | ---------|------ | 
 | Fixed-Window  | 1.46058  | 1.51955  |  
 | Expanding-Window  | **1.45249**  | 1.51432  |
