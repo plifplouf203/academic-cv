@@ -1,5 +1,5 @@
 ---
-title: "An example preprint / working paper"
+title: "Monetary Policy in a Period of Rapid Disinflation: A QPM Analysis of Hungary’s Post-2022 Inflation Episode"
 math: true
 authors:
 - me
@@ -20,11 +20,7 @@ peer_reviewed: false
 open_access: true
 license: CC-BY-4.0
 
-funding:
-  - funder: "Wellcome Trust"
-    grant: "WT-219123/Z/19/Z"
-
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: This work examines the monetary policy trade-offs surrounding Hungary’s exceptionally rapid disinflation of 2023. Using an IMF Quarterly Projection Model calibrated to the Hungarian economy, we conduct a forecasting exercise to assess whether a looser policy stance could have produced a softer landing, and ultimately a case of “painless disinflation”. The model forecast reproduces a rapid decline in inflation while allowing the nominal policy rate to decrease progressively. The interaction between the interest- and exchange-rate channels, coupled with the decline in inflation expectations tighten the monetary conditions. Our alternative policy simulations indicate more aggressive policy rules can marginally improve inflation outcomes, but at the expense of a larger negative output gap. 
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -265,7 +261,7 @@ increase in inflation triggers an immediate response from the central bank, caus
 The context regarding Hungary’s recent disinflation episode was not simply the mechanical reversal of the 2022 inflation shock, but rather the gradual unwinding of several mutually reinforcing sources of inflationary pressure. One side of the post-Covid dynamics can be explained by foreign shocks have played an important role in disrupting price stability, encompassing both demand shocks, such as deferred post-pandemic global consumption, and supply shocks, including disruptions to global value chains and the impact of Russia’s war of aggression against Ukraine. 
 This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et *al*., 2024] but also for all Central Europpean countries [Šestořád et *al*., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et *al*. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate$^{1}$. 
 > [!NOTE]
->$^{1} $ : As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
+>$^{1} $ As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
 
 The MNB responded with a strong demonstration of the role of monetary policy as a stabilizing 
 force. Among the first in Europe to act, the MNB signaled heightened inflationary risks in early 2021 and promptly began raising interest rates. To restore price stability, the MNB undertook the largest cumulative rate hikes among EU countries, further underscoring the central role of monetary policy in counteracting inflation. Although the intervention was strong, it is to be noted that some observers view it as late, as the ECB took action in 2022Q2 whereas the MNB did so only in September of the same year. Nevertheless, this decisive policy led to inflation peaking in early 2023, followed by a period of rapid disinflation.  
