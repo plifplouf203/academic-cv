@@ -47,9 +47,7 @@ funding:
   - funder: "European Research Council"
     grant: "ERC-StG-101234"
 
-abstract: This work investigates the modeling and forecasting of financial volatility using daily returns of Oracle Corporation. The analysis combines several families of models, including GARCH-type 
-specifications for conditional volatility, as well as CAViaR and GAS models for tail-risk estimation.
-The objective is to identify models describing accurately the observed volatility and being able to forecast future volatility.
+abstract: This work investigates the modeling and forecasting of financial volatility using daily returns of Oracle Corporation. The analysis combines several families of models, including GARCH-type specifications for conditional volatility, as well as CAViaR and GAS models for tail-risk estimation. The objective is to identify models describing accurately the observed volatility and being able to forecast future volatility.
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
