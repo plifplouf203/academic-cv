@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: 'Modeling and Forecasting Volatility : Empirical Evidence from Oracle'
 math: true
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
