@@ -112,12 +112,11 @@ than a year.
 
 The log-returns displays that very volatile tendency at the start and end of our period of analysis. Nonetheless, we observe the traditional mean-reverting property of the returns (figure 2a) as well assome signs of leverage effect as the squared returns as high-volatility is dominated by the period where Oracle found itself in the most difficult positions (figure 2b).
 
-![image](orcl_fig_2ab.png "Figure 2a : ORCL Daily Log-returns      Figure 2b : ORCL Daily Squared Log-returns")
+![image](orcl_fig_2ab.png "Figure 2a : ORCL Daily Log-returns  ; Figure 2b : ORCL Daily Squared Log-returns")
 
 Our observation of stylized facts is not yet finished. Raw returns show no clear pattern of autocorrelation as shown by the ACF (figure 3a) consistently with the idea that they are difficult to predict from their own past values. On the other hand, the ACF of squared returns (figure 3b) displays a strong memory. Not only does this imply the volatility is persistent as the autocorrelation slowly decays but it also clusters as it remains high above our 95 % confidence dotted box.
 
-![image](orcl_fig_3ab.png.pdf " Figure 3a : ORCL ACF of Daily Returns
-           Figure 3b : ORCL ACF of Daily Squared-returns")
+![image](orcl_fig_3ab.png " Figure 3a : ORCL ACF of Daily Returns ; Figure 3b : ORCL ACF of Daily Squared-returns")
 
 This motivates empirically the estimation by GARCH-type models. Below is a summary table of the results (table 1) :
 
@@ -168,9 +167,7 @@ The closest the ratio is to the defined model (here 2.5%), the better it is. SAV
 ## 2 Forecasting exercise
 The following part handles a one-step-ahead forecasting exercise of the conditional volatility of ORCL.
 
-The first four models that we estimated are all valid candidate models for this task because they are specifically designed to model time-varying volatility and volatility clustering, which are important characteristics of financial returns. As we’ve previously tested their behaviour on our stock, we will 
-focus our efforts on those specifically. One thing to note is that EGARCH is a bit more difficult because of its non-linear structure (EGARCH models the logarithm of the conditional variance to 
-circumvent the sign restrictions of the parameters). It can make the optimization procedure more tedious and the interpretation of the parameters less direct. Thus, before diving in the results, let’s observe how we obtain one-step forecast for the GARCH-N, GARCH-t and GJR-GARCH-t (we exclude EGARCH). The standard equation for a GARCH(1,1) is :
+The first four models that we estimated are all valid candidate models for this task because they are specifically designed to model time-varying volatility and volatility clustering, which are important characteristics of financial returns. As we’ve previously tested their behaviour on our stock, we will focus our efforts on those specifically. One thing to note is that EGARCH is a bit more difficult because of its non-linear structure (EGARCH models the logarithm of the conditional variance to circumvent the sign restrictions of the parameters). It can make the optimization procedure more tedious and the interpretation of the parameters less direct. Thus, before diving in the results, let’s observe how we obtain one-step forecast for the GARCH-N, GARCH-t and GJR-GARCH-t (we exclude EGARCH). The standard equation for a GARCH(1,1) is :
 
 <div>
 $$
@@ -237,7 +234,7 @@ where $h_{t}$ is the forecast and $\sigma$ the realization. The results are as f
 | Expanding-Window  | 1.47604  | **1.42689**  | 1.47785 |
 <div style="text-align: center;">Table 4b : QLIKE Loss for the forecasted squared volatility</div>
 
-As expected, all models performs similarly great. Even though the expanding estimation window scheme dominates the performance in both metrics, the improvement is barely significant. Considering simultaneously both loss functions, there is no unanimous clear « winner ». Based on MSE, GARCH-N results in the lowest metric in both estimation scheme whereas it is GARCH-t that takes up on this role when computing QLIKE. Thus, our results are at least positive on showing a clear MSE vs. QLIKE trade-off. Nonetheless, one might question whether the slightly better performance observed in some models and/or scheme is the consequence of better predictive capacity or simply a coincidence of the chosen sample. For that purpose, we run a pair-wise Diebold-Mariano test to all of our combinations. The DM test evaluates whether two forecasting methods have equal predictive accuracy, e.g. the null hypothesis is : $H_{0}:E[d\{t}]=0$ with $d_{t}$ the loss differential. We report the p-values in the following tables (table 5a-d) :
+As expected, all models performs similarly great. Even though the expanding estimation window scheme dominates the performance in both metrics, the improvement is barely significant. Considering simultaneously both loss functions, there is no unanimous clear « winner ». Based on MSE, GARCH-N results in the lowest metric in both estimation scheme whereas it is GARCH-t that takes up on this role when computing QLIKE. Thus, our results are at least positive on showing a clear MSE vs. QLIKE trade-off. Nonetheless, one might question whether the slightly better performance observed in some models and/or scheme is the consequence of better predictive capacity or simply a coincidence of the chosen sample. For that purpose, we run a pair-wise Diebold-Mariano test to all of our combinations. The DM test evaluates whether two forecasting methods have equal predictive accuracy, e.g. the null hypothesis is : $H_{0}:E[d_{t}]=0$ with $d_{t}$ the loss differential. We report the p-values in the following tables (table 5a-d) :
 
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
@@ -286,13 +283,13 @@ Here, we will only focus on the GARCH-N model. We produces 21-step ahead forecas
 
 Again, our two new forecatst outputs very similar results between the two estimation schemes and it remains far from the realized series. Now, comparing the single and multi-step forecasts, the one step forecast is more reactive to news (e.g. recent spikes), while the 21-step forecast is smoother as it gazes way forward in the future. But this is not always the case and the multi-step react more strongly to spikes than the one-step. It is a direct consequence of the delay of what’s being included in the information set : our model observes large spikes at a certain period but this information is only included later in the memory and is being retained through memory and persistence. In consequence, it may look as if the 21-step ahead forecasts can react to certain spikes that the one step doesn’t, but it is actually just coincidental seasonality of large shocks. We evaluate those further after computing the loss metrics (table 6a and 6b) : 
 
-| | GARCH-N\\GARCH-N\\(21-step-ahead) | GARCH-N\\(One-step ahead realigned) |
+| | $GARCH-N\\GARCH-N\\(21-step-ahead)$ | $GARCH-N\\(One-step-ahead-realigned)$ |
 | -------------- | ---------|------ | 
 | Fixed-Window  | .60870  | .61268  |  
 | Expanding-Window  | **.60729**  | .61222  |
 <div style="text-align: center;">Table 6A : MSE Loss for the 21- versus One-step ahead volatility forecast (scaled by 10$^{5}$)</div>
 
-| | $GARCH-N\\(21-step-ahead)$ | $GARCH-N\\(One-step ahead realigned)$ |
+| | $GARCH-N\\(21-step-ahead)$ | $GARCH-N\\(One-step-ahead-realigned)$ |
 | -------------- | ---------|------ | 
 | Fixed-Window  | 1.46058  | 1.51955  |  
 | Expanding-Window  | **1.45249**  | 1.51432  |
