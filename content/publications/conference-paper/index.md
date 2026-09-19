@@ -100,6 +100,65 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+## Introduction
+The following work analyses the performance of some predictive volatility models built to exploit 
+high frequency data. This is carried out through the development of mainly GARCH-type models 
+but we will sometimes extend the class of models to some other specifications such as CAViaR 
+models. Our object of research is the Oracle Corporation stock. Oracle is an American software 
+company founded in 1977 by Larry Ellison. Starting with a database management product with 
+notable clients among which the CIA, it has now expanded in various branches in the tech industry 
+among which supply chain-, capital-, sales-, human resources-management through its cloud-based 
+software services. The company’s focus on cloud and license business infrastructure technologies 
+put it at the heart of the recent AI-boom in the US. As such, its market capitalization today is 
+evaluated around 420 billion dollars which is comparable to the likes of Palantir, another major 
+American AI company. Oracle stock price is frequently subject to large volatility movements, 
+mostly in relation to major news regarding the company or the US tech sector.
+
+This work is divided in two sections. Firstly, we perform a volatility analysis of the stock returns 
+estimating a wide array of models on the data. The latter is then evaluated through different metrics 
+to observe their sensibility to extreme risks. Secondly, we perform a forecasting exercise in the form
+of a pseudo-out-of-sample experiment on the last few months of observations. We focus there on a 
+more restricted set of models for the sake of explanatory power and comparability. Again, the 
+models are evaluated by their accuracy, their actual predictive ability and how they behaved in 
+comparison to the realized series. Our period of analysis spans from January 1, 2000 to August 9, 
+2026. Previous observations were also available but excluded due to extremely noisy returns in 
+those early years.
+## 1 Volatility Analysis
+The Oracle daily stock prices follow the classic story of the tech companies that are still today 
+successful. Historically, the company suffered for its financial mismanagement at the end of the 
+1990s, aggravated by the Internet Bubble at the start of the century. But Oracle survived and 
+solidified its positions in the tech sector by acquiring key companies such as Hyperion Solutions in 
+2007, Sun Microsystems (Java, MySQL, LibreOffice…) in 2010 or even Taleo in 2012. From 2021,
+the steady growth exploded exponentially in relation to bigger acquisitions (ex: Cerner…), 
+exceptional financial results and the implication of the different activities in the AI ecosystem. The 
+all-time high is reached in September 2025 when Oracle announced being part of Project Stargate, 
+which is a 500 billion dollar investment plan in AI infrastructure copiloted with OpenAI and 
+Softbank with the support of the Trump administration. However, concerns and missed expectations
+surrounding the project subsequently contributed to a sharp decline in the stock price within less 
+than a year.
+[!image](ORCL_Prices_Daily.pdf "Figure 1 : ORCL Daily Prices")
+
+The log-returns displays that very volatile tendency at the start and end of our period of analysis. 
+Nonetheless, we observe the traditional mean-reverting property of the returns (figure 2a) as well as
+some signs of leverage effect as the squared returns as high-volatility is dominated by the period 
+where Oracle found itself in the most difficult positions (figure 2b).
+
+[!image](ORCL_Log_Returns_Daily.pdf "Figure 2a : ORCL Daily Log-returns")
+[!image](ORCL_Squared_Log_Returns_Daily.pdf "Figure 2b : ORCL Daily Squared Log-returns")
+
+Our observation of stylized facts is not yet finished. Raw returns show no clear pattern of 
+autocorrelation as shown by the ACF (figure 3a) consistently with the idea that they are difficult to 
+predict from their own past values. On the other hand, the ACF of squared returns (figure 3b) 
+displays a strong memory. Not only does this imply the volatility is persistent as the autocorrelation 
+slowly decays but it also clusters as it remains high above our 95 % confidence dotted box.
+
+[!image](ORCL_Log_Returns_Daily.pdf "Figure 2a : ORCL Daily Log-returns")
+[!image](ORCL_Squared_Log_Returns_Daily.pdf "Figure 2b : ORCL Daily Squared Log-returns")
+
+
+
+
+
 
 > [!NOTE]
 > Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
