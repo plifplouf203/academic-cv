@@ -102,12 +102,12 @@ But this success was not without its consequences. quarterly GDP growth fell in 
 times in the negative domain. Such an observation may bring back discussion around the notion of 
 sacrifice ratio [Okun, 1978] which measures the tradeoff between inflation stabilization and output 
 in the short run. This possibility of a tradeoff is particularly interesting in our case as more recent 
-studies [Katayama et al., 2019] specify that the longer the duration of the disinflation process, the 
+studies [Katayama et *al*., 2019] specify that the longer the duration of the disinflation process, the 
 higher the sacrifice ratio. Our work gets much closer to another notion that also emanates in the 
 rational-expectations literature : painless disinflation. Commonly attributed to Sargent [Sargent, 
 1982], the latter analysed credible regime changes that brought major inflations to an end with 
 relatively limited real costs at the start of the 20th century. We actually draw a lot more inspiration 
-from the revival of the concept by Golinelli and Rovelli [Golinelli et al., 2002] who explore how in 
+from the revival of the concept by Golinelli and Rovelli [Golinelli et *al*., 2002] who explore how in 
 a forward-looking small open economy, a monetary-policy rule can affect inflation through 
 expectations, aggregate demand, and the exchange rate simultaneously. If these channels reinforce 
 each other, the central bank can achieve a substantial reduction in inflation without requiring an 
@@ -158,7 +158,7 @@ construction and the linked results and evaluation.
 ## 1. The Model
 ### 1.1 Canonical Version of the QPM
 The basic version of the QPM model (also referred to as the canonical QPM) was proposed by the 
-IMF in 2006 [Berg et al., 2006a,b]. It is sometimes considered a New Keynesian model as it blends 
+IMF in 2006 [Berg et *al*., 2006a,b]. It is sometimes considered a New Keynesian model as it blends 
 the emphasis on some specific mechanisms. The model is based on the ideas of monopolistic 
 competition and features nominal rigidities. Prices are assumed to be sticky, meaning that they don’t
 adjust immediately as underlying costs of production change. Output in the short-run is demand
@@ -261,7 +261,7 @@ expected levels. This, in turn, is transmitted to changes in the longer-term rat
 Changes in the interest rate also affect the nominal exchange rate, which is assumed to be flexible in the canonical setup. Further, changes in the exchange rate affect inflation directly via the cost of imported factors of production, and indirectly via changes in the relative prices of imported goods vis-à-vis domestic, and the corresponding shifts in aggregate demand between imported and domestic goods. Because of the changes in aggregate demand for domestically produced goods, domestic output and domestic cost pressures change as well, which then affects inflation.
 
 The resolution of the model begins with assigning a value to each structural parameter. When 
-parameters are properly calibrated, the model should have a unique stable solution (Blanchard-Kahn condition [Blanchard et al., 1980]). The dedicated software manages the computation of algorithms.
+parameters are properly calibrated, the model should have a unique stable solution (Blanchard-Kahn condition [Blanchard et *al*., 1980]). The dedicated software manages the computation of algorithms.
 #### Calibration and Parameters Values
 As in most QPMs, parameter values are assigned through three approaches: estimation from data 
 for available series, calibration from previous studies, and expert judgment. For technical reasons, we relied only on the latter and didn’t perform any estimation ourselves.
@@ -274,11 +274,11 @@ Data was sourced from various institutional sources. The observation period star
 quarterly basis. All data was seasonally adjusted. More information in the appendix.
 ### 1.3 Impulse Response Functions (IRFs)
 The model is calibrated to be broadly similar to previous trusted external estimates of other 
-macroeconomic models dedicated to the Hungarian economy [Jackson, 2024 ; Szilágyi et al., 2013].
+macroeconomic models dedicated to the Hungarian economy [Jackson, 2024 ; Szilágyi et *al*., 2013].
 The series of graphs below describe the response of key variables to a 1.0 percentage point shock.
 
 All IRFs can be found in the Appendix. A 1pp temporary but persistent increase in the policy rate reduces the level of the output gap by almost 0.2 percent and reduces inflation by a peak of close to 0.4pp (Figure 2). This implies a low sacrifice ratio. YoY CPI inflation also falls quite quickly : the peak impact is reached under a year and comes back to normal after two years. Both these features reflect the importance of the exchange rate channel in Hungary, consistent with the findings of the aforementionned papers.
-![Description of image](IRF_comparison.png "Figure 2 : IRFs of Szilágyi et al. model (left) VS. our QPM (right) under a monetary policy shock")
+![Description of image](IRF_comparison.png "Figure 2 : IRFs of Szilágyi et *al*. model (left) VS. our QPM (right) under a monetary policy shock")
 
 The response to a cost-push shock explains further the functioning of our model (Figure 3). The 
 increase in inflation triggers an immediate response from the central bank, causing the real interest rate to become substantially more restrictive. At the same time, the exchange rate depreciates and continues to tighten the monetary conditions. The resulting contraction in aggregate demand generates a temporary negative output gap of -0.015pp. The output cost is relatively small in this case. It does not conform to a textbook « painless » reaction to an inflationary scenario but it remains low-cost and doesn’t go completely against it either. 
@@ -288,7 +288,7 @@ increase in inflation triggers an immediate response from the central bank, caus
 ## 2. Context
 ### 2.1 The Post-Covid Inflation
 The context regarding Hungary’s recent disinflation episode was not simply the mechanical reversal of the 2022 inflation shock, but rather the gradual unwinding of several mutually reinforcing sources of inflationary pressure. One side of the post-Covid dynamics can be explained by foreign shocks have played an important role in disrupting price stability, encompassing both demand shocks, such as deferred post-pandemic global consumption, and supply shocks, including disruptions to global value chains and the impact of Russia’s war of aggression against Ukraine. 
-This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et al., 2024] but also for all Central Europpean countries [Šestořád et al., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et al. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate[^1]. [^1]: As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
+This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et *al*., 2024] but also for all Central Europpean countries [Šestořád et *al*., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et *al*. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate[^1]. [^1]: As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
 
 The MNB responded with a strong demonstration of the role of monetary policy as a stabilizing 
 force. Among the first in Europe to act, the MNB signaled heightened inflationary risks in early 2021 and promptly began raising interest rates. To restore price stability, the MNB undertook the largest cumulative rate hikes among EU countries, further underscoring the central role of monetary policy in counteracting inflation. Although the intervention was strong, it is to be noted that some observers view it as late, as the ECB took action in 2022Q2 whereas the MNB did so only in September of the same year. Nevertheless, this decisive policy led to inflation peaking in early 2023, followed by a period of rapid disinflation.  
@@ -314,7 +314,7 @@ In order to assess the ability of our QPM to capture the salient properties of a
 For most variables, the model matches actual data reasonably well. Despite occasional visible 
 forecast errors for all variables, to a large extent, the QPM manages to capture the relevant turning points in most indicators. Some of the measurements suffer for under- and/or overshooting in periods of high volatility. It is expected as the standard QPM is noted to not be particularly performant in case of an exceptional crisis. For example, the output gap in-sample simulations shows a strong under-evaluation of the pandemic crisis and the model consistently  undershoot the 2022 inflation spike. It also made it so that tuning some of the parameters and/or steady-state values did not substantially improve the model’s accuracy while straying us further away from previous experts judgments and calibration. Hence, we decided to keep our initial calibration untouched.
 ### 3.2 The Policy Loss Function
-To evaluate alternative monetary policy rules, we use a quadratic loss function that captures the central bank’s trade-offs between inflation stabilization, output stabilization, and interest-rate smoothing. The specification is inspired by the conclusions of a report by the IMF Research Department [Debortoli et al., 2019] that motivates the addition of economic activity’s measurements when designing loss functions for central banks. Such factors are driven by the will to better approximate social welfare, especially in our case where the strong disinflation led to a sharp detrioration in GDP growth. The period loss is given by
+To evaluate alternative monetary policy rules, we use a quadratic loss function that captures the central bank’s trade-offs between inflation stabilization, output stabilization, and interest-rate smoothing. The specification is inspired by the conclusions of a report by the IMF Research Department [Debortoli et *al*., 2019] that motivates the addition of economic activity’s measurements when designing loss functions for central banks. Such factors are driven by the will to better approximate social welfare, especially in our case where the strong disinflation led to a sharp detrioration in GDP growth. The period loss is given by
 <div>
 $$
 \begin{aligned}
@@ -339,7 +339,7 @@ inflation, while the second one allows for an equal influence of both price stab
 | ---------- | --------------------- | ------------ | ------------------|
 |(1) Inflation-focused|0.7|     0.5    | 0.1  |              
 |  (2) Balanced          |   0.5   | 0.5          | 0.1  |
-Table 1 : Loss function specifications
+<div style="text-align: center;">Table 1 : Loss function specifications</div>
 
 ### 3.3 Forecast Results
 
@@ -350,20 +350,91 @@ We produce multiple forecasts on a small selection of parameter values. We start
 | $g_{1}$ | 0.5 ; 06  |0.7| 0.8 ; 0.9 ; 0.99*   |
 | $g_{2}$ | 0.6 ; 0.8 ; 1 | 1.2 | 1.4 ; 1.6 ; 2  |
 | $g_{3}$ |  0 ; 0.05 ; 0.15 | 0.25|    0.4; 0.5 ; 1|
-*g1 = 1 doesn’t solve the model’s steady-state
+**g1 = 1 doesn’t solve the model’s steady-state*
 Table 2 : Parameter grid for the policy rule
 
 The baseline simulation suggests that the disinflation can occur alongside a declining nominal 
-policy rate (Figure 7). During the first quarters, the real interest rate gap shows a strong increase in response to a collapse in inflation expectations. Even if this collapse could be exaggerated from the way we modeled it (purely forward-looking), it still somewhat reflects the strong commitment of the MNB against the inflation when the disinflation period has already started. In an opposite fashion, the real exchange rate response produces a substantial real appreciation. As a result, both components encourages a contraction of the monetary conditions (Eq. 2) and push down the output gap (Eq. 1). Meanwhile, the strenghtening of the forint contributes further to the reduction of inflation through a decrease in real marginal costs. Hence, the central bank can reduce the nominal policy rate without necessarily relaxing the monetary stance. Price stability recovers fast, the target is reached in a span shorter than a year. Finally, all variables are close to reach their steady-state values in 2025Q4 and the model will reach its equilibrium in the first months of 2026. The interest rate and exchange rate channels operating together to a fast disinflation process while inflation expectations fall is a very similar mechanism recorded in the Golinelli et al. [2002] paper. 
+policy rate (Figure 7). During the first quarters, the real interest rate gap shows a strong increase in response to a collapse in inflation expectations. Even if this collapse could be exaggerated from the way we modeled it (purely forward-looking), it still somewhat reflects the strong commitment of the MNB against the inflation when the disinflation period has already started. In an opposite fashion, the real exchange rate response produces a substantial real appreciation. As a result, both components encourages a contraction of the monetary conditions (Eq. 2) and push down the output gap (Eq. 1). Meanwhile, the strenghtening of the forint contributes further to the reduction of inflation through a decrease in real marginal costs. Hence, the central bank can reduce the nominal policy rate without necessarily relaxing the monetary stance. Price stability recovers fast, the target is reached in a span shorter than a year. Finally, all variables are close to reach their steady-state values in 2025Q4 and the model will reach its equilibrium in the first months of 2026. The interest rate and exchange rate channels operating together to a fast disinflation process while inflation expectations fall is a very similar mechanism recorded in the Golinelli et *al*. [2002] paper. 
 
 ![Description of image](forecast.png "Figure 7 : Baseline forecasts and alternatives (dotted)")
 
-The alternative tested policy rules flow close to the baseline. While changing g2 and g3 doesn’t alter much the inflation trajectories in comparison to baseline, raising g1 produces substantially lower statistics. It is particularly impactful as the latter alters the entire dynamic (both present and future) path of the policy rate. Thus, the minimum on our grid is reached at g1 = 0.9. Thereafter, the loss explodes when nearing 1. However, the disinflation is not completely « painless ». The restrictive monetary conditions pushes the output gap in the negative, highlighting a real trade-off cost in the policy. As a symbol, the most striking result in bringing inflation down is also the one that contracts the economy the most.  
+The alternative tested policy rules flow close to the baseline. While changing $g_{2}$ and $g_{3}$ doesn’t alter much the inflation trajectories in comparison to baseline, raising $g_{1}$ produces substantially lower statistics. It is particularly impactful as the latter alters the entire dynamic (both present and future) path of the policy rate. Thus, the minimum on our grid is reached at $g_{1} = 0.9$. Thereafter, the loss explodes when nearing 1. However, the disinflation is not completely « painless ». The restrictive monetary conditions pushes the output gap in the negative, highlighting a real trade-off cost in the policy. As a symbol, the most striking result in bringing inflation down is also the one that contracts the economy the most.  
+
 The fact that relatively large changes in the Taylor rule coefficients output only modest differences in the inflation and output gap paths suggest its limited ability to alter the specific underlying dynamics of this setting. It is not so surprising : the previous drivers of inflation were rapidly losing strength and Hungary remains a relatively small open economy. It aligns especially with the study of the Hungarian inflation of Botos [2023] that an « autonomous monetary policy actions cannot deal with inflation, because the national policy cannot get rid of the international money markets ». Passing the alternative scenarios through our loss function confirms this sentiment (Table 3) :
 
+|  | Baseline        | $g_{1}=0.9$ |$g_{2}=0.6$ |$g_{3}=0.005$|$g_{3}=0.5$|
+| ------|------|--------- | ------------- | ----------|--------- |
+| Inflation-focused | 15.8803|14.4113| 15.8033 |15.8910|15.8726|
+| Balanced | 11.6666 | 10.4844 | 11.6253 |11.6654|11.6727|
+Table 3 : Loss functions results to each scenarios
 
+All the above scenarios score lower than the baseline. The lower $g_{2}$ indicates that giving a lower 
+weight to the inflation deviation gives better metrics. Altering $g_{3}$ is more nuanced, adding more 
+importance to the output gap is only beneficial if the policymaker’s loss function is inflation
+focused, but it is the other way around when real economy stabilization and price stability are 
+balanced objectives. The above statements highlight how insufficient a standard Taylor-based 
+monetary rule in this context of fast disinflation driven by external forces. The extreme value that 
+minimizes losses clearly shows that the best solution lies outside of what can be represented within 
+our policy rule equation. In fact, $g_{2} < 1$ is a clear indication that we’re departing further from this 
+typical scheme. This calls for the necessity of defining the monetary policy rule differently so that it
+better accounts for the sources of disinflation such as backward-looking/imperfectly anchored 
+expectations or exchange-rate pass-through for example.
+## Conclusion
+This paper has examined the monetary policy trade-offs surrounding Hungary’s exceptionally rapid 
+disinflation following the inflationary shock of 2022. Using an IMF Quarterly Projection Model 
+calibrated to the Hungarian economy, we conducted a pseudo-out-of-sample forecasting exercise to 
+assess whether a looser monetary policy stance could have produced a softer landing, and ultimately
+a case of “painless disinflation”.
 
+Our results suggest that the answer is nuanced. The baseline model reproduces a rapid decline in 
+inflation while allowing the nominal policy rate to decrease progressively. This apparent easing 
+does not, however, imply a substantial relaxation of monetary conditions. Rather, the interaction 
+between the interest- and exchange-rate channels, together with the decline in inflation 
+expectations, generates a tightening of real monetary conditions.
 
+Nevertheless, our alternative policy simulations indicate more aggressive responses in the monetary
+policy rule can marginally improve inflation outcomes, but they do so at the expense of a larger 
+negative output gap. The evaluation through a quadratic loss function outputs a domination of 
+several alternative specifications, a lower response to inflation deviations generally producing a 
+lower overall loss. Yet the magnitude of these differences remains relatively limited as changes in 
+the Taylor-rule parameters have only modest effects on the trajectories of inflation and output.
+In such circumstances, a conventional Taylor rule is not necessarily an adequate representation of 
+the policy problem faced by the central bank. A rule designed primarily around contemporaneous 
+inflation and the output gap may respond too mechanically to an inflation rate whose dynamics are 
+largely determined by external shocks and exchange-rate pass-through.
+
+References
+Act CXXXIX of 2013 on the Magyar Nemzeti Bank 
+Berg A., Karam P., and Laxton D. (2006a): *“A Practical Model-Based Approach to Monetary Policy 
+Analysis—Overview”*, IMF WP/06/80. 
+Berg A., Karam P., and Laxton D. (2006b): *“A Practical Model-Based Approach to Monetary Policy 
+Analysis—A How-to Guide”*, IMF WP/06/81. 
+Blanchard, O. J., & Kahn, C. M. (1980). *The Solution of Linear Difference Models under Rational 
+Expectations*. Econometrica, 48(5), 1305–1311.
+Botos, K. (2023). *Inflation and finance*. Public Finance Quarterly, 69(4), 84-94.
+Cohn-Bech, E., K. Foda, & A. Roitman (2023): *“Drivers of Inflation: Hungary.”* Selected Issues Papers 004, International Monetary Fund. 
+Debortoli, D., Kim, J., Lindé, J., & Nunes, R. (2019). *Designing a simple loss function for central banks: Does a dual mandate make sense?*. The Economic Journal, 129(621), 2010-2038.
+Golinelli, R., & Rovelli, R. (2002). *Painless disinflation? Monetary policy rules in Hungary, 1991‐99*. 
+Economics of Transition, 10(1), 55-91.
+International Monetary Fund. European Dept. (2025). *Hungary: 2025 Article IV Consultation-Press Release;
+Staff Report; and Statement by the Executive Director for Hungary*. IMF Staff Country Reports, 2025(250). 
+Retrieved Sep 8, 2026.
+Jackson, C. (2024). *Monetary Policy Analysis with a Quarterly Projection Model*. IMF Selected Issues 
+Paper, 36. 
+Katayama, H., Ponomareva, N., & Sharma, M. (2019). *What determines the sacrifice ratio? a bayesian 
+model averaging approach*. Oxford Bulletin of Economics and Statistics, 81(5), 960-988.
+Lagarde, C. (2023), *Speech at “The ECB and Its Watchers XXIII” conference*, Frankfurt am Main, 22 March.
+MNB (2023). Inflation report, March 2023 (English). 
+Okun, A. M. (1978). *Efficient disinflationary policies*. The American Economic Review, 68(2), 348-352.
+Sargent, T. J. (1982). *The ends of four big inflations. In Inflation: Causes and effects*. University of Chicago Press.
+Šestořád T., Dvořáková N. (2024): *"Origins of Post-COVID-19 Inflation in Central European Countries"* 
+IES Working Papers 36/2024. IES FSV. Charles University. 
+Sipiczki Z, Imre G, Varga J. (2024). *How “Hungaricum” is inflation in Hungary? The classical and specific factors of outstanding inflation in Hungary*. Journal of Infrastructure, Policy and Development. 8(15): 8981
+Szilágyi, K., Baksa, D., Benes, J., Horváth, Á., Köber, C., & Soós, G. D. (2013). *The Hungarian monetary 
+policy model (No. 2013/1)*. MNB Working Papers.
+
+### Appendix 
+The appendix is available in the pdf version.
 
 
 
