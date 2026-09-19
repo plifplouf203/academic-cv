@@ -335,7 +335,7 @@ We run our model on two sets of weights level (Table 1). The first set puts more
 inflation, while the second one allows for an equal influence of both price stability and economic activity. A third set giving more importance to the output gap was not selected as the MNB Founding Act still explicitly mentions that its primary objective shall be to achieve and maintain price stability. This third set would have been highly likely to be unfeasible. On the other side, putting an stronger weight on price stability is contrary to our topic, and so, not relevant.
 
 
-| weight  | $\omega_{\pi}$        | $\omega_{y}$ | $\omega_{\Delta i}$ |
+|   | $\omega_{\pi}$        | $\omega_{y}$ | $\omega_{\Delta i}$ |
 | ---------- | --------------------- | ------------ | ------------------|
 |(1) Inflation-focused|0.7|     0.5    | 0.1  |              
 |  (2) Balanced          |   0.5   | 0.5          | 0.1  |
