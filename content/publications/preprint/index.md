@@ -125,35 +125,16 @@ also forward-looking. So what matters is the expected paths for interest rates a
 rates today. This model is a tool of the Forecasting and Policy Analysis System (FPAS) of numerous
 central banks around the world, tailored and extended to the specific context of each economy.
 
-Thus, this framework allows us to test alternative monetary policy rules in a pseudo-out-of-sample 
-forecasting exercise. The objective is to test whether a loosened monetary policy could have 
-induced a « softer landing », up to the point if a « painless disinflation » was effectively possible. 
+Thus, this framework allows us to test alternative monetary policy rules in a pseudo-out-of-sample forecasting exercise. The objective is to test whether a loosened monetary policy could have induced a « softer landing », up to the point if a « painless disinflation » was effectively possible. 
 The study of monetary policy in disinflation is quite rare in the literature. In fact, the term 
-« disinflation policies » is widely used to describe all decisions taken to recover price stability as 
-inflation growing. It is logical as the primary mandate of most central banks is price stability and 
-that what matters most is thus, to get back to a stable inflation target as fast as possible, economic 
-stability being a non-binding secondary objective. It is also the case of the MNB which has set its 
-inflation target to 3% [MNB, 2013]. Our work is rather focused on what the monetary authority 
-should do when we are past this spike, in a context where fast disinflation is likely. Although it 
-represents an exceptional setting, we consider this work to be an humble contribution to the topic.
+« disinflation policies » is widely used to describe all decisions taken to recover price stability as inflation growing. It is logical as the primary mandate of most central banks is price stability and that what matters most is thus, to get back to a stable inflation target as fast as possible, economic stability being a non-binding secondary objective. It is also the case of the MNB which has set its inflation target to 3% [MNB, 2013]. Our work is rather focused on what the monetary authority should do when we are past this spike, in a context where fast disinflation is likely. Although it represents an exceptional setting, we consider this work to be an humble contribution to the topic.
 
 Our period of observations ranges from 1999Q1 to 2025Q3. We reject previous periods for lack of 
-data availability and quality. Our pseudo-out-of-sample forecasting period starts in 2023Q1 to end 
-in 2025Q4. Our baseline conclusions are in line with the literature aforementioned where the 
-interest rate and exchange rate channels operate together to push the economy toward fast 
+data availability and quality. Our pseudo-out-of-sample forecasting period starts in 2023Q1 to end in 2025Q4. Our baseline conclusions are in line with the literature aforementioned where the interest rate and exchange rate channels operate together to push the economy toward fast 
 disinflation. The whole process is supported by falling inflation expectations. Our alternative 
-model-based forecasts indicates that a lower nominal interest rate could have help inflation fall 
-faster, sometimes at a higher output cost. Evaluated through different specifications of a standard 
-quadratic loss function, the latter scenario is computed to be preferable. However, the winning 
-alternative rules highlight especially that the monetary policy had little effect on disinflation in this 
-situation. Moreover, it shows that a standard Taylor rule (as the default one included in the QPM) is 
-inefficient to produce an effective monetary policy in this context.
+model-based forecasts indicates that a lower nominal interest rate could have help inflation fall faster, sometimes at a higher output cost. Evaluated through different specifications of a standard quadratic loss function, the latter scenario is computed to be preferable. However, the winning alternative rules highlight especially that the monetary policy had little effect on disinflation in this situation. Moreover, it shows that a standard Taylor rule (as the default one included in the QPM) is inefficient to produce an effective monetary policy in this context.
 
-The following content is divided in three sections. Section 1 presents the model, the different block 
-of equations, the transmission mechanisms and the calibration. Section 2 gives extented information
-about the particular context of Hungary at this period, the expectation about what were to come in 
-2023 and further motivation for our design choices. Finally, section 3 compiles our forecasts 
-construction and the linked results and evaluation.
+The following content is divided in three sections. Section 1 presents the model, the different block of equations, the transmission mechanisms and the calibration. Section 2 gives extented informationabout the particular context of Hungary at this period, the expectation about what were to come in 2023 and further motivation for our design choices. Finally, section 3 compiles our forecasts construction and the linked results and evaluation.
 
 ## 1. The Model
 ### 1.1 Canonical Version of the QPM
@@ -186,17 +167,11 @@ for stochastic shocks in its equations.
 
 Finally, this framework does not include all sectors of the economy explicitly (endogenous fiscal 
 and financial sectors, export industries…) and specific country features (dollarization, imperfect 
-central bank credibility…). This goes beyond the scope of this work. More importantly, it matters to
-stress that this model is neither a pure forecasting device (as a VAR would be) nor does it allow 
-explicit discussion of optimality (in the absence of microeconomic foundations). It was first and 
-foremost created to foster discussions around economic policy through a meaningful and 
-transparent model.
+central bank credibility…). This goes beyond the scope of this work. More importantly, it matters to stress that this model is neither a pure forecasting device (as a VAR would be) nor does it allow explicit discussion of optimality (in the absence of microeconomic foundations). It was first and foremost created to foster discussions around economic policy through a meaningful and transparent model.
 
 The model expresses each variable in terms of its deviation from equilibrium, in other words in 
 ”gap” terms. This canonical/basic version consists of four blocks, namely: aggregate demand, 
-inflation dynamics, exchange rate dynamics, and monetary policy reaction function. Gap terms are 
-written with a hat, foreign variables with a star and those measured by their long-run equilibrium a 
-bar.
+inflation dynamics, exchange rate dynamics, and monetary policy reaction function. Gap terms are written with a hat, foreign variables with a star and those measured by their long-run equilibrium a bar.
 #### Aggregate demand and supply 
 The output gap ($\hat{y}_{t}$) is a function of its lag and its expected value, a monetary conditions index ($mci_{t}$), the foreign output gap ($\hat{y}^{*}_{t}$) and aggregate demand shocks ($\epsilon^{y}_{t}$). The mci captures the impact of monetary policy on aggregate demand. It is comprised of a weighted average between the real interest rate gap ($\hat{r}_{t}$) and deviations in the real exchange rate from its trend ($\hat{z}_{t}$). A positive mci indicates tight monetary conditions so $b_{2}$ has a negative sign.
 
@@ -288,7 +263,9 @@ increase in inflation triggers an immediate response from the central bank, caus
 ## 2. Context
 ### 2.1 The Post-Covid Inflation
 The context regarding Hungary’s recent disinflation episode was not simply the mechanical reversal of the 2022 inflation shock, but rather the gradual unwinding of several mutually reinforcing sources of inflationary pressure. One side of the post-Covid dynamics can be explained by foreign shocks have played an important role in disrupting price stability, encompassing both demand shocks, such as deferred post-pandemic global consumption, and supply shocks, including disruptions to global value chains and the impact of Russia’s war of aggression against Ukraine. 
-This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et *al*., 2024] but also for all Central Europpean countries [Šestořád et *al*., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et *al*. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate[^1] . [^1] : As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
+This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et *al*., 2024] but also for all Central Europpean countries [Šestořád et *al*., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et *al*. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate$^{1}$. 
+> [!NOTE]
+>$^{1} $ : As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
 
 The MNB responded with a strong demonstration of the role of monetary policy as a stabilizing 
 force. Among the first in Europe to act, the MNB signaled heightened inflationary risks in early 2021 and promptly began raising interest rates. To restore price stability, the MNB undertook the largest cumulative rate hikes among EU countries, further underscoring the central role of monetary policy in counteracting inflation. Although the intervention was strong, it is to be noted that some observers view it as late, as the ECB took action in 2022Q2 whereas the MNB did so only in September of the same year. Nevertheless, this decisive policy led to inflation peaking in early 2023, followed by a period of rapid disinflation.  
