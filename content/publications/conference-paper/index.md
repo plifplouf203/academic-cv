@@ -127,7 +127,7 @@ This motivates empirically the estimation by GARCH-type models. Below is a summa
 | GARCH-t        | 0.00078 | ~0   |0.077 | 0.922 | 4.1 | |
 | EGARCH         | 0.00012 | -0.1417  |-0.037 | 0.980 | |0.015|
 | GJR-GARCH-N    | 0.00034 | ~0  | 0.033 | 0.0912 | |0.08|
-Table 1 : Parameter estimates of GARCH models for daily ORCL returns
+<div style="text-align: center;">Table 1 : Parameter estimates of GARCH models for daily ORCL returns</div>
 
 All of the estimated models highlight a strong volatility persistence in ORCL returns ($\alpha + \beta$ very close to 1 each time) and thus confirms volatility clustering. Our GARCH-t specification allows us to evaluate the shape of the innovation distribution outside of the standard normal distribution. Here, our $\nu$ is relatively low (4.1) which is a significant sign of excess kurtosis and fat tails. Finally the $\gamma$ estimates are both positive and important. GJR-GARCH and EGARCH allow for an asymmetric innovation distribution (skewness) which shows here to underline a leverage effect : negative shocks affect more volatility than positive ones of the same magnitude. Overall, the main volatility dynamics are robust across model specifications, while differences between the models become more apparent during periods of extreme market movements at the start and end of our period of analysis (figure 4).
 
@@ -147,7 +147,7 @@ Next, we must manage the possibility of extreme risks through the computation of
 | SAV-CARE       | | | -0.165 | -0.267 |0.863 | | |1.176|0.112|-0.527| | |
 | GAS-1F         | | | 0.989 |  | | | |0.006 | | | -4.140|-5.701 |
 | HistSim (250d) |(No Parameters) |
-Table 2 : Parameter estimates of different models to model VaR and ES
+<div style="text-align: center;">Table 2 : Parameter estimates of different models to model VaR and ES</div>
 
 The estimated parameters generally exhibit the expected signs and admissible ranges. The GARCH and GJR-GARCH estimates imply positive volatility responses and high persistence, while the positive GJR-GARCH asymmetry parameter indicates a leverage effect. These results remain consistent with the previous estimation. The CARE and GAS specifications also produce persistent VaR/ES dynamics with negative tail-risk levels. For CARE-AS the positive value of $\beta_{4}$ indicates substantial persistence in the VaR process and the negative values for $\beta_{2}$ mean larger returns push the VaR in the negative tail for CARE-AS and SAV-CARE. For the GAS-1F, the very high $\beta$ makes it so that it remembers its previous risk/volatility state for a long time. Thus, the estimated VaR and ES don't change abruptly from one day to the next unless there is sufficiently strong new information in the returns. 
 
@@ -161,7 +161,7 @@ It is to be noted though that visual appreciation is not sufficient to deliver a
 |GARCH-N|GJR-GARCH-t |HistSim | SAV-CAViaR |AS-CAViaR|GAS1F|
 | -------------- | ---------|------ | -----|--------|---|
 | .02572  | .02647  | .02901  | .02422 | .02437 |.02422 | 
-Table 3 : Hit ratio for VaR 2.5%
+<div style="text-align: center;">Table 3 : Hit ratio for VaR 2.5%</div>
 
 The closest the ratio is to the defined model (here 2.5%), the better it is. SAV-CAViaR and GAS-1F arrive first ex-aequo closely followed by AS-CAViaR. Unsurprisingly, the over-pessimistic GJR-GARCH-t arrives second-to-last and HistSim dead last.
 
@@ -206,7 +206,7 @@ Now, we are generating a sequence of forecasts for our three models on the last 
 ![image](orcl_fig_6a.png "Figure 6a : Forecasts of squared volatility  - Fixed Window")
 ![image](orcl_fig_6b.png "Figure 6b : Forecasts of squared volatility  - Expanding Window")
 
-It remains reassuring that the volatility-clustering mechanism of our GARCH-type models still functioned properly. Hence, the ten highest volatility forecasts are concentrated in a short period spanning from June 3rd to the 16th. It corresponds to the release on June 10th of Oracle's FY2026 Q4 earnings. The company reported strong headline numbers — revenue +21%, cloud revenue +47%, and the RPO (the value of contracts not yet recognized as revenue) jumping to $638 billion making it the biggest backlog among the tech hyperscalers. However, the report also reveals free cash flow was down $23.7 billion and that the 2027 strategy would pursue this deepening. Those numbers raised enormous doubts on the capacity of Oracle on converting its RPO into actual revenue and not additional debt for infrastructure. That the period starts on the 3rd indicates there was high anticipation around the release. As a result, Oracle lost almost 20% of market capitalization (figure 7) during the first two weeks of June and has since yet to recover. During this month, the highest forecast was given by the GARCH-N model in both estimation schemes (although still far from reality). But it is to keep in mind that not all highly volatile periods made GARCH-N react the strongest each time, comparing several more pseudo-out-of-sample experiments would be required to assess whether it is actually the most reasonable model choice in hefty times.
+It remains reassuring that the volatility-clustering mechanism of our GARCH-type models still functioned properly. Hence, the ten highest volatility forecasts are concentrated in a short period spanning from June 3rd to the 16th. It corresponds to the release on June 10th of Oracle's FY2026 Q4 earnings. The company reported strong headline numbers — revenue +21%, cloud revenue +47%, and the RPO (the value of contracts not yet recognized as revenue) jumping to $\$$638 billion making it the biggest backlog among the tech hyperscalers. However, the report also reveals free cash flow was down $\$$23.7 billion and that the 2027 strategy would pursue this deepening. Those numbers raised enormous doubts on the capacity of Oracle on converting its RPO into actual revenue and not additional debt for infrastructure. That the period starts on the 3rd indicates there was high anticipation around the release. As a result, Oracle lost almost 20% of market capitalization (figure 7) during the first two weeks of June and has since yet to recover. During this month, the highest forecast was given by the GARCH-N model in both estimation schemes (although still far from reality). But it is to keep in mind that not all highly volatile periods made GARCH-N react the strongest each time, comparing several more pseudo-out-of-sample experiments would be required to assess whether it is actually the most reasonable model choice in hefty times.
 
 ![image](orcl_fig_7.png "Figure 7 : ORCL Stock Price in June 2026")
 
@@ -230,45 +230,42 @@ where $h_{t}$ is the forecast and $\sigma$ the realization. The results are as f
 | Fixed-Window  | .56519  | .56530  | .57614 | 
 | Expanding-Window  | **.56478**  | .56520  | .57572 |
 
-Table 4a : MSE Loss for the forecasted squared volatility (scaled by 10$^{5}$)
+<div style="text-align: center;">Table 4a : MSE Loss for the forecasted squared volatility (scaled by 10$^{5}$)</div>
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
 | Fixed-Window  | 1.48062  | 1.42763  | 1.47882 | 
 | Expanding-Window  | 1.47604  | **1.42689**  | 1.47785 |
+<div style="text-align: center;">Table 4b : QLIKE Loss for the forecasted squared volatility</div>
 
-Table 4b : QLIKE Loss for the forecasted squared volatility
-
-As expected, all models performs similarly great. Even though the expanding estimation window scheme dominates the performance in both metrics, the improvement is barely significant. Considering simultaneously both loss functions, there is no unanimous clear « winner ». Based on MSE, GARCH-N results in the lowest metric in both estimation scheme whereas it is GARCH-t that takes up on this role when computing QLIKE. Thus, our results are at least positive on showing a clear MSE vs. QLIKE trade-off. Nonetheless, one might question whether the slightly better performance observed in some models and/or scheme is the consequence of better predictive capacity or simply a coincidence of the chosen sample. For that purpose, we run a pair-wise Diebold-Mariano test to all of our combinations. The DM test evaluates whether two forecasting methods have equal predictive accuracy, e.g. the null hypothesis is : $H_{0}:E[d\{t}=0$.
-
-with $d_{t}$ the loss differential. We report the p-values in the following tables (table 5a-d) :
+As expected, all models performs similarly great. Even though the expanding estimation window scheme dominates the performance in both metrics, the improvement is barely significant. Considering simultaneously both loss functions, there is no unanimous clear « winner ». Based on MSE, GARCH-N results in the lowest metric in both estimation scheme whereas it is GARCH-t that takes up on this role when computing QLIKE. Thus, our results are at least positive on showing a clear MSE vs. QLIKE trade-off. Nonetheless, one might question whether the slightly better performance observed in some models and/or scheme is the consequence of better predictive capacity or simply a coincidence of the chosen sample. For that purpose, we run a pair-wise Diebold-Mariano test to all of our combinations. The DM test evaluates whether two forecasting methods have equal predictive accuracy, e.g. the null hypothesis is : $H_{0}:E[d\{t}]=0$ with $d_{t}$ the loss differential. We report the p-values in the following tables (table 5a-d) :
 
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
 | GARCH-N  |  | 0.000006  | 0.68354 | 
 | GARCH-t  |  |  | 0.00662 |
 | GJR-GARCH-N  |   |  |  |
-Table 5a : DM tests for equal predictive ability with MSE (fixed-window) – p-values
+<div style="text-align: center;">Table 5a : DM tests for equal predictive ability with MSE (fixed-window) – p-values</div>
 
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
 | GARCH-N  |  | 0.0000003  | 0.66586 | 
 | GARCH-t  |  |  | 0.00399 |
 | GJR-GARCH-N  |   |  |  |
-Table 5b : DM tests for equal predictive ability with MSE (expanding-window) – p-values
+<div style="text-align: center;">Table 5b : DM tests for equal predictive ability with MSE (expanding-window) – p-values</div>
 
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
 | GARCH-N  |  | ~0 | 0.53305 | 
 | GARCH-t  |  |  | 0.00095 |
 | GJR-GARCH-N  |   |  |  |
-Table 5c : DM tests for equal predictive ability with QLIKE (fixed-window) – p-values
+<div style="text-align: center;">Table 5c : DM tests for equal predictive ability with QLIKE (fixed-window) – p-values</div>
 
 | |GARCH-N|GARCH-t | GJR-GARCH-N |
 | -------------- | ---------|------ | -----|
 | GARCH-N  |  | ~0 |0.60432 | 
 | GARCH-t  |  |  | 0.00065 |
 | GJR-GARCH-N  |   |  |  |
-Table 5d : DM tests for equal predictive ability with QLIKE (expanding-window) – p-values
+<div style="text-align: center;">Table 5d : DM tests for equal predictive ability with QLIKE (expanding-window) – p-values</div>
 
 The pairwise DM tests indicate consistent results across both the fixed-window and expanding window forecasting schemes. Using both QLIKE and MSE loss functions, the null hypothesis is rejected when comparing GARCH-t with GARCH-N and GJR-GARCH-N (all p-values largely inferior than 1%). In contrast, the null hypothesis cannot be rejected when comparing GARCH-N with GJR-GARCH-N. Thus, there is strong evidence that the GARCH-t model has significantly different predictive accuracy from the other two models, while there is no statistically significant difference between GARCH-N and GJR-GARCH-N. Thus, this comforts our choice of choosing GARCH-t as the outperfomring model for minimizing QLIKE but does the opposite for the MSE, especially considering that GARCH-N scored the best- and GJR-GARCH-N the worst metrics.
 
@@ -289,19 +286,17 @@ Here, we will only focus on the GARCH-N model. We produces 21-step ahead forecas
 
 Again, our two new forecatst outputs very similar results between the two estimation schemes and it remains far from the realized series. Now, comparing the single and multi-step forecasts, the one step forecast is more reactive to news (e.g. recent spikes), while the 21-step forecast is smoother as it gazes way forward in the future. But this is not always the case and the multi-step react more strongly to spikes than the one-step. It is a direct consequence of the delay of what’s being included in the information set : our model observes large spikes at a certain period but this information is only included later in the memory and is being retained through memory and persistence. In consequence, it may look as if the 21-step ahead forecasts can react to certain spikes that the one step doesn’t, but it is actually just coincidental seasonality of large shocks. We evaluate those further after computing the loss metrics (table 6a and 6b) : 
 
-| | GARCH-N | GARCH-N |
-| | (21-step ahead) |(One-step ahead realigned) |
+| | GARCH-N\\GARCH-N\\(21-step-ahead) | GARCH-N\\(One-step ahead realigned) |
 | -------------- | ---------|------ | 
 | Fixed-Window  | .60870  | .61268  |  
 | Expanding-Window  | **.60729**  | .61222  |
-Table 6A : MSE Loss for the 21- versus One-step ahead volatility forecast (scaled by 10$^{5}$)
+<div style="text-align: center;">Table 6A : MSE Loss for the 21- versus One-step ahead volatility forecast (scaled by 10$^{5}$)</div>
 
-| | GARCH-N | GARCH-N |
-| | (21-step ahead) |(One-step ahead realigned) |
+| | GARCH-N\\GARCH-N\\(21-step-ahead) | GARCH-N\\(One-step ahead realigned) |
 | -------------- | ---------|------ | 
 | Fixed-Window  | 1.46058  | 1.51955  |  
 | Expanding-Window  | **1.45249**  | 1.51432  |
-Table 6b : QLIKE Loss for the 21- versus One-step ahead volatility forecast
+<div style="text-align: center;">Table 6b : QLIKE Loss for the 21- versus One-step ahead volatility forecast</div>
 
 The results displayed above are quite surprising. Despite all arguments mentioned earlier, the long horizon iterated forecasts dominate in both loss functions. Several reasons could explain this occurrence. Objectively, the biggest difference between our two forecasting methods is the information set. Better volatility forecasts using a smaller and further away in the past set could actually give more information about future volatility than recent news on average. But to confirm such claims properly, we would have to repeat the experiment on different periods several times. This brings us to our second argument, which is simply that the former claim reveals itself to be true only as an exceptional event on our particular sample and doesn’t generalize well. Finally, it is to be reminded that we computed our loss functions against the realized squared returns which is a very noisy signal. As the multi-step-ahead procedure outputs a smoother forecast that tends to the long-term variance (like the expected level of the realized squared return), it could be that the loss metrics are hence better as they remain, in the end, penalized averages. This constitutes my final argument. However, I would still rather choose the one-day-ahead forecast. Looking at the plots show how much better it reacts to extreme risks in terms of timing and magnitude. As before, we inspect more deeply the predictive ability of the models with a Diebold-Mariano test (Table 7).
 
@@ -309,7 +304,7 @@ The results displayed above are quite surprising. Despite all arguments mentione
 | -------------- | ---------|------ | 
 | Fixed-Window  | .00197  | .00386  |  
 | Expanding-Window  |.0045  | .00685  |
-Table 7 : DM tests p-values for equal predictive ability (21- versus One-step-ahead forecast)
+<div style="text-align: center;">Table 7 : DM tests p-values for equal predictive ability (21- versus One-step-ahead forecast)</div>
 
 The DM test p-values lead to a rejection of the null hypothesis in all four cases. This indicates the multi-step-ahead procedure significantly outperforms the one-step-ahead forecast. Although the results seem counterintuitive, my previous statements about said-outputs still constitute plausible explanations.
 ## Conclusion
