@@ -343,17 +343,7 @@ Table 1 : Loss function specifications
 
 ### 3.3 Forecast Results
 
-We produce multiple forecasts on a small selection of parameter values. We start from the baseline 
-specification and test around and below it, changing the value of only one parameter at a time and 
-holding the others constant. Although a joint optimization is totally feasible, it is outside the scope 
-of our work. It should be recalled that our forecast exersise is drawn on a short and exceptional 
-period that is not bound to happen in the same circumstances again. Hence, the conclusions drawn 
-from an « optimized » policy rule could not be applied, not only because we are working on a 
-simple and model-based forecast that is highly dependant to its input data, but also because the 
-setting is not reproducible in another country or time period. Instead, we choose to explore the 
-sensibility of our interest rate equation following moderate variations that would reflect unrealistic 
-decisions if a policymaker were actually to rely on our framework. In consequence, we define our 
-grid as follows (Table 2) :
+We produce multiple forecasts on a small selection of parameter values. We start from the baseline specification and test around and below it, changing the value of only one parameter at a time and holding the others constant. Although a joint optimization is totally feasible, it is outside the scope of our work. It should be recalled that our forecast exersise is drawn on a short and exceptional period that is not bound to happen in the same circumstances again. Hence, the conclusions drawn from an « optimized » policy rule could not be applied, not only because we are working on a simple and model-based forecast that is highly dependant to its input data, but also because the setting is not reproducible in another country or time period. Instead, we choose to explore the sensibility of our interest rate equation following moderate variations that would reflect unrealistic decisions if a policymaker were actually to rely on our framework. In consequence, we define our grid as follows (Table 2) :
 
 |  |         | Baseline | |
 | ------------|--------- | ------------- | ------------------- |
@@ -364,19 +354,18 @@ grid as follows (Table 2) :
 Table 2 : Parameter grid for the policy rule
 
 The baseline simulation suggests that the disinflation can occur alongside a declining nominal 
-policy rate (Figure 7). During the first quarters, the real interest rate gap shows a strong increase in 
-response to a collapse in inflation expectations. Even if this collapse could be exaggerated from the 
-way we modeled it (purely forward-looking), it still somewhat reflects the strong commitment of 
-the MNB against the inflation when the disinflation period has already started. In an opposite 
-fashion, the real exchange rate response produces a substantial real appreciation. As a result, both 
-components encourages a contraction of the monetary conditions (Eq. 2) and push down the output 
-gap (Eq. 1). Meanwhile, the strenghtening of the forint contributes further to the reduction of 
-inflation through a decrease in real marginal costs. Hence, the central bank can reduce the nominal 
-policy rate without necessarily relaxing the monetary stance. Price stability recovers fast, the target 
-is reached in a span shorter than a year. Finally, all variables are close to reach their steady-state 
-values in 2025Q4 and the model will reach its equilibrium in the first months of 2026. The interest 
-rate and exchange rate channels operating together to a fast disinflation process while inflation 
-expectations fall is a very similar mechanism recorded in the Golinelli et al. [2002] paper. 
+policy rate (Figure 7). During the first quarters, the real interest rate gap shows a strong increase in response to a collapse in inflation expectations. Even if this collapse could be exaggerated from the way we modeled it (purely forward-looking), it still somewhat reflects the strong commitment of the MNB against the inflation when the disinflation period has already started. In an opposite fashion, the real exchange rate response produces a substantial real appreciation. As a result, both components encourages a contraction of the monetary conditions (Eq. 2) and push down the output gap (Eq. 1). Meanwhile, the strenghtening of the forint contributes further to the reduction of inflation through a decrease in real marginal costs. Hence, the central bank can reduce the nominal policy rate without necessarily relaxing the monetary stance. Price stability recovers fast, the target is reached in a span shorter than a year. Finally, all variables are close to reach their steady-state values in 2025Q4 and the model will reach its equilibrium in the first months of 2026. The interest rate and exchange rate channels operating together to a fast disinflation process while inflation expectations fall is a very similar mechanism recorded in the Golinelli et al. [2002] paper. 
+
+![Description of image](forecast.png "Figure 7 : Baseline forecasts and alternatives (dotted)")
+
+The alternative tested policy rules flow close to the baseline. While changing g2 and g3 doesn’t alter much the inflation trajectories in comparison to baseline, raising g1 produces substantially lower statistics. It is particularly impactful as the latter alters the entire dynamic (both present and future) path of the policy rate. Thus, the minimum on our grid is reached at g1 = 0.9. Thereafter, the loss explodes when nearing 1. However, the disinflation is not completely « painless ». The restrictive monetary conditions pushes the output gap in the negative, highlighting a real trade-off cost in the policy. As a symbol, the most striking result in bringing inflation down is also the one that contracts the economy the most.  
+The fact that relatively large changes in the Taylor rule coefficients output only modest differences in the inflation and output gap paths suggest its limited ability to alter the specific underlying dynamics of this setting. It is not so surprising : the previous drivers of inflation were rapidly losing strength and Hungary remains a relatively small open economy. It aligns especially with the study of the Hungarian inflation of Botos [2023] that an « autonomous monetary policy actions cannot deal with inflation, because the national policy cannot get rid of the international money markets ». Passing the alternative scenarios through our loss function confirms this sentiment (Table 3) :
+
+
+
+
+
+
 
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
