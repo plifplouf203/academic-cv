@@ -335,6 +335,30 @@ We run our model on two sets of weights level (Table 1). The first set puts more
 inflation, while the second one allows for an equal influence of both price stability and economic activity. A third set giving more importance to the output gap was not selected as the MNB Founding Act still explicitly mentions that its primary objective shall be to achieve and maintain price stability. This third set would have been highly likely to be unfeasible. On the other side, putting an stronger weight on price stability is contrary to our topic, and so, not relevant.
 
 
+|  | $\omega_{\pi}$        | $\omega_{y}$ | $\omega_{\Delta i}$ |
+| ---------- | --------------------- | ------------ | ------------------|
+|(1) Inflation-focused            |  0.7|     0.5    | 0.1  |              
+|  (2) Balanced          |   0.5   | 0.5          | 0.1  |
+$&&Table 1 : Loss function specifications&&$
+
+### 3.3 Forecast Results
+
+We produce multiple forecasts on a small selection of parameter values. We start from the baseline 
+specification and test around and below it, changing the value of only one parameter at a time and 
+holding the others constant. Although a joint optimization is totally feasible, it is outside the scope 
+of our work. It should be recalled that our forecast exersise is drawn on a short and exceptional 
+period that is not bound to happen in the same circumstances again. Hence, the conclusions drawn 
+from an « optimized » policy rule could not be applied, not only because we are working on a 
+simple and model-based forecast that is highly dependant to its input data, but also because the 
+setting is not reproducible in another country or time period. Instead, we choose to explore the 
+sensibility of our interest rate equation following moderate variations that would reflect unrealistic 
+decisions if a policymaker were actually to rely on our framework. In consequence, we define our 
+grid as follows (Table 2) :
+
+
+
+
+
 > [!NOTE]
 > Create your slides in Markdown - click the *Slides* button to check out the example.
 
