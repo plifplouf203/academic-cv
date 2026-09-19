@@ -288,7 +288,7 @@ increase in inflation triggers an immediate response from the central bank, caus
 ## 2. Context
 ### 2.1 The Post-Covid Inflation
 The context regarding Hungary’s recent disinflation episode was not simply the mechanical reversal of the 2022 inflation shock, but rather the gradual unwinding of several mutually reinforcing sources of inflationary pressure. One side of the post-Covid dynamics can be explained by foreign shocks have played an important role in disrupting price stability, encompassing both demand shocks, such as deferred post-pandemic global consumption, and supply shocks, including disruptions to global value chains and the impact of Russia’s war of aggression against Ukraine. 
-This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et *al*., 2024] but also for all Central Europpean countries [Šestořád et *al*., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et *al*. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate[^1]. [^1]: As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
+This side of the story is not only acknowledged in the literature for Hungary [Botos, 2023 ; Sipiczki et *al*., 2024] but also for all Central Europpean countries [Šestořád et *al*., 2024]. On the other side, the domestic inflationary drivers for 2022 can be summarized as traditional energy price increases, wage increases, retailer responses to the price cap regime, credit expansion consumption, and the effects of a drought year. The agricultural situation is specifically to be noted as food price inflation was the highest in Hungary compared to the rest of Europe while the the country’s food industry experienced a sharp decline in the performance. This decline is the consequence of the dependence of the sector on imports whom also got more expensive through an extended period of of the currency. According to Cohn-Bech et *al*. [2023], during 2022, the forint depreciated against the US dollar by more than most emerging markets currencies globally. Moreover, frequent disputes with the European Union and withholding of more than 10 billion euros added to risk perceptions and intensified pressure on the exchange rate[^1] . [^1] : As of the time of writing this work (May 2026), the latter issue is yet to be resolved.
 
 The MNB responded with a strong demonstration of the role of monetary policy as a stabilizing 
 force. Among the first in Europe to act, the MNB signaled heightened inflationary risks in early 2021 and promptly began raising interest rates. To restore price stability, the MNB undertook the largest cumulative rate hikes among EU countries, further underscoring the central role of monetary policy in counteracting inflation. Although the intervention was strong, it is to be noted that some observers view it as late, as the ECB took action in 2022Q2 whereas the MNB did so only in September of the same year. Nevertheless, this decisive policy led to inflation peaking in early 2023, followed by a period of rapid disinflation.  
@@ -351,7 +351,7 @@ We produce multiple forecasts on a small selection of parameter values. We start
 | $g_{2}$ | 0.6 ; 0.8 ; 1 | 1.2 | 1.4 ; 1.6 ; 2  |
 | $g_{3}$ |  0 ; 0.05 ; 0.15 | 0.25|    0.4; 0.5 ; 1|
 **g1 = 1 doesn’t solve the model’s steady-state*
-Table 2 : Parameter grid for the policy rule
+<div style="text-align: center;">Table 2 : Parameter grid for the policy rule</div>
 
 The baseline simulation suggests that the disinflation can occur alongside a declining nominal 
 policy rate (Figure 7). During the first quarters, the real interest rate gap shows a strong increase in response to a collapse in inflation expectations. Even if this collapse could be exaggerated from the way we modeled it (purely forward-looking), it still somewhat reflects the strong commitment of the MNB against the inflation when the disinflation period has already started. In an opposite fashion, the real exchange rate response produces a substantial real appreciation. As a result, both components encourages a contraction of the monetary conditions (Eq. 2) and push down the output gap (Eq. 1). Meanwhile, the strenghtening of the forint contributes further to the reduction of inflation through a decrease in real marginal costs. Hence, the central bank can reduce the nominal policy rate without necessarily relaxing the monetary stance. Price stability recovers fast, the target is reached in a span shorter than a year. Finally, all variables are close to reach their steady-state values in 2025Q4 and the model will reach its equilibrium in the first months of 2026. The interest rate and exchange rate channels operating together to a fast disinflation process while inflation expectations fall is a very similar mechanism recorded in the Golinelli et *al*. [2002] paper. 
@@ -366,18 +366,11 @@ The fact that relatively large changes in the Taylor rule coefficients output on
 | ------|------|--------- | ------------- | ----------|--------- |
 | Inflation-focused | 15.8803|14.4113| 15.8033 |15.8910|15.8726|
 | Balanced | 11.6666 | 10.4844 | 11.6253 |11.6654|11.6727|
-Table 3 : Loss functions results to each scenarios
+<div style="text-align: center;">Table 3 : Loss functions results to each scenarios</div>
 
 All the above scenarios score lower than the baseline. The lower $g_{2}$ indicates that giving a lower 
 weight to the inflation deviation gives better metrics. Altering $g_{3}$ is more nuanced, adding more 
-importance to the output gap is only beneficial if the policymaker’s loss function is inflation
-focused, but it is the other way around when real economy stabilization and price stability are 
-balanced objectives. The above statements highlight how insufficient a standard Taylor-based 
-monetary rule in this context of fast disinflation driven by external forces. The extreme value that 
-minimizes losses clearly shows that the best solution lies outside of what can be represented within 
-our policy rule equation. In fact, $g_{2} < 1$ is a clear indication that we’re departing further from this 
-typical scheme. This calls for the necessity of defining the monetary policy rule differently so that it
-better accounts for the sources of disinflation such as backward-looking/imperfectly anchored 
+importance to the output gap is only beneficial if the policymaker’s loss function is inflation focused, but it is the other way around when real economy stabilization and price stability are balanced objectives. The above statements highlight how insufficient a standard Taylor-based monetary rule in this context of fast disinflation driven by external forces. The extreme value that minimizes losses clearly shows that the best solution lies outside of what can be represented within our policy rule equation. In fact, $g_{2} < 1$ is a clear indication that we’re departing further from this typical scheme. This calls for the necessity of defining the monetary policy rule differently so that it better accounts for the sources of disinflation such as backward-looking/imperfectly anchored 
 expectations or exchange-rate pass-through for example.
 ## Conclusion
 This paper has examined the monetary policy trade-offs surrounding Hungary’s exceptionally rapid 
@@ -405,31 +398,46 @@ largely determined by external shocks and exchange-rate pass-through.
 
 ## References
 Act CXXXIX of 2013 on the Magyar Nemzeti Bank 
+
 Berg A., Karam P., and Laxton D. (2006a): *“A Practical Model-Based Approach to Monetary Policy 
 Analysis—Overview”*, IMF WP/06/80. 
+
 Berg A., Karam P., and Laxton D. (2006b): *“A Practical Model-Based Approach to Monetary Policy 
 Analysis—A How-to Guide”*, IMF WP/06/81. 
+
 Blanchard, O. J., & Kahn, C. M. (1980). *The Solution of Linear Difference Models under Rational 
 Expectations*. Econometrica, 48(5), 1305–1311.
+
 Botos, K. (2023). *Inflation and finance*. Public Finance Quarterly, 69(4), 84-94.
 Cohn-Bech, E., K. Foda, & A. Roitman (2023): *“Drivers of Inflation: Hungary.”* Selected Issues Papers 004, International Monetary Fund. 
+
 Debortoli, D., Kim, J., Lindé, J., & Nunes, R. (2019). *Designing a simple loss function for central banks: Does a dual mandate make sense?*. The Economic Journal, 129(621), 2010-2038.
+
 Golinelli, R., & Rovelli, R. (2002). *Painless disinflation? Monetary policy rules in Hungary, 1991‐99*. 
 Economics of Transition, 10(1), 55-91.
+
 International Monetary Fund. European Dept. (2025). *Hungary: 2025 Article IV Consultation-Press Release;
 Staff Report; and Statement by the Executive Director for Hungary*. IMF Staff Country Reports, 2025(250). 
 Retrieved Sep 8, 2026.
+
 Jackson, C. (2024). *Monetary Policy Analysis with a Quarterly Projection Model*. IMF Selected Issues 
-Paper, 36. 
+Paper, 36.
+
 Katayama, H., Ponomareva, N., & Sharma, M. (2019). *What determines the sacrifice ratio? a bayesian 
 model averaging approach*. Oxford Bulletin of Economics and Statistics, 81(5), 960-988.
+
 Lagarde, C. (2023), *Speech at “The ECB and Its Watchers XXIII” conference*, Frankfurt am Main, 22 March.
 MNB (2023). Inflation report, March 2023 (English). 
+
 Okun, A. M. (1978). *Efficient disinflationary policies*. The American Economic Review, 68(2), 348-352.
+
 Sargent, T. J. (1982). *The ends of four big inflations. In Inflation: Causes and effects*. University of Chicago Press.
+
 Šestořád T., Dvořáková N. (2024): *"Origins of Post-COVID-19 Inflation in Central European Countries"* 
 IES Working Papers 36/2024. IES FSV. Charles University. 
+
 Sipiczki Z, Imre G, Varga J. (2024). *How “Hungaricum” is inflation in Hungary? The classical and specific factors of outstanding inflation in Hungary*. Journal of Infrastructure, Policy and Development. 8(15): 8981
+
 Szilágyi, K., Baksa, D., Benes, J., Horváth, Á., Köber, C., & Soós, G. D. (2013). *The Hungarian monetary 
 policy model (No. 2013/1)*. MNB Working Papers.
 
