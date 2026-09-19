@@ -403,7 +403,7 @@ the policy problem faced by the central bank. A rule designed primarily around c
 inflation and the output gap may respond too mechanically to an inflation rate whose dynamics are 
 largely determined by external shocks and exchange-rate pass-through.
 
-References
+## References
 Act CXXXIX of 2013 on the Magyar Nemzeti Bank 
 Berg A., Karam P., and Laxton D. (2006a): *“A Practical Model-Based Approach to Monetary Policy 
 Analysis—Overview”*, IMF WP/06/80. 
@@ -433,7 +433,7 @@ Sipiczki Z, Imre G, Varga J. (2024). *How “Hungaricum” is inflation in Hunga
 Szilágyi, K., Baksa, D., Benes, J., Horváth, Á., Köber, C., & Soós, G. D. (2013). *The Hungarian monetary 
 policy model (No. 2013/1)*. MNB Working Papers.
 
-### Appendix 
+##  Appendix 
 The appendix is available in the pdf version.
 
 
