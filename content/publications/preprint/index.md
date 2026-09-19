@@ -23,7 +23,7 @@ license: CC-BY-4.0
 abstract: This work examines the monetary policy trade-offs surrounding Hungary’s exceptionally rapid disinflation of 2023. Using an IMF Quarterly Projection Model calibrated to the Hungarian economy, we conduct a forecasting exercise to assess whether a looser policy stance could have produced a softer landing, and ultimately a case of “painless disinflation”. The model forecast reproduces a rapid decline in inflation while allowing the nominal policy rate to decrease progressively. The interaction between the interest- and exchange-rate channels, coupled with the decline in inflation expectations tighten the monetary conditions. Our alternative policy simulations indicate more aggressive policy rules can marginally improve inflation outcomes, but at the expense of a larger negative output gap. 
 
 # Summary. An optional shortened abstract.
-summary: A QPM Analysis of Hungary’s Post-2022 Inflation Episode
+summary: "A QPM Analysis of Hungary’s Post-2022 Inflation Episode"
 
 tags:
 - Large Language Models
