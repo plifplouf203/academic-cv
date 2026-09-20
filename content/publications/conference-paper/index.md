@@ -13,47 +13,32 @@ author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
+date: '2026-08-22T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2026-08-22T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+
 
 # Publication metadata — structured fields used by citation styles and BibTeX export.
 publication:
   name: "Proceedings of the HugoBlox Kit Conference"
   short_name: "ICW"
 
-peer_reviewed: true
-open_access: true
-license: CC-BY-4.0
-
 # Awards, honors, and recognitions. Surfaced as badges on the page and in listings.
-awards:
-  - name: "Best Paper Award"
-    level: winner
-    note: "Top 5 of 8000 submissions"
-  - name: "Oral Presentation"
-    level: selected
 
 # Funders and grants. Required by many funders for compliance reporting.
-funding:
-  - funder: "National Science Foundation"
-    grant: "NSF-2401234"
-  - funder: "European Research Council"
-    grant: "ERC-StG-101234"
 
 abstract: This work investigates the modeling and forecasting of financial volatility using daily returns of Oracle Corporation. The analysis combines several families of models, including GARCH-type specifications for conditional volatility, as well as CAViaR and GAS models for tail-risk estimation. The objective is to identify models describing accurately the observed volatility and being able to forecast future volatility.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-
+summary: Estimation of different models to study and forecast daily stock returns volatility of a Big Tech company.
 tags:
-  - Large Language Models
+  - R Studio
+  - Financial Econometrics
 
 # Display this page in the Featured widget?
 featured: true
@@ -71,17 +56,11 @@ links:
     url: https://github.com/HugoBlox/kit
   - type: dataset
     url: https://github.com/HugoBlox/kit
-  - type: slides
-    url: https://www.slideshare.net/
-  - type: source
-    url: https://github.com/HugoBlox/kit
-  - type: video
-    url: https://youtube.com
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: [**The Market Periodical**](https://unsplash.com/photos/pLCdAaMFLTE)'
   focal_point: ''
   preview_only: false
 
@@ -317,10 +296,3 @@ Finally, the comparison between one-step-ahead and 21-step-ahead GARCH forecasts
 Patton, A. (2011). *Volatility Forecast Comparison Using Imperfect Volatility Proxies*. Journal of Econometrics, 
 160:246–256.
 
-
-
-
-> [!NOTE]
-> Create your slides in Markdown - click the _Slides_ button to check out the example.
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
