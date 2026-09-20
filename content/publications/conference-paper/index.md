@@ -6,12 +6,10 @@ math: true
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - me
-  - Robert Ford
+
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+
 
 date: '2026-08-22T00:00:00Z'
 
