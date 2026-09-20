@@ -1,5 +1,5 @@
 ---
-title: "Tokenisation financière - une révolution en marche, mais sur quels rails ?"
+title: "[🇫🇷] Tokenisation financière : une révolution en marche, mais sur quels rails ?"
 authors:
 - me
 author_notes:
@@ -34,7 +34,7 @@ Competition:
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
 # Summary. An optional shortened abstract.
-summary: [French version] Ma participation au concours Bloc-Notes Eco 2025 de la Banque de France sur le thème :"« La monnaie à l’ère du numérique et des crypto-actifs : quels défis et opportunités pour les Banques centrales ? »
+summary: "[French version] Ma participation au concours Bloc-Notes Eco 2025 de la Banque de France sur le thème :"« La monnaie à l’ère du numérique et des crypto-actifs : quels défis et opportunités pour les Banques centrales ? »"
 
 tags:
 - Essay
