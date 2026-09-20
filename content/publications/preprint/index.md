@@ -3,10 +3,10 @@ title: "Monetary Policy in a Period of Rapid Disinflation"
 math: true
 authors:
 - me
-date: "2019-04-07T00:00:00Z"
+date: "2026-09"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2026-09-04T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -16,17 +16,14 @@ publication_types: ["article"]
 # Publication metadata — structured fields used by citation styles and BibTeX export.
 # Preprints typically have no formal venue; omit `publication` until the work is accepted.
 
-peer_reviewed: false
-open_access: true
-license: CC-BY-4.0
-
 abstract: This work examines the monetary policy trade-offs surrounding Hungary’s exceptionally rapid disinflation of 2023. Using an IMF Quarterly Projection Model calibrated to the Hungarian economy, we conduct a forecasting exercise to assess whether a looser policy stance could have produced a softer landing, and ultimately a case of “painless disinflation”. The model forecast reproduces a rapid decline in inflation while allowing the nominal policy rate to decrease progressively. The interaction between the interest- and exchange-rate channels, coupled with the decline in inflation expectations tighten the monetary conditions. Our alternative policy simulations indicate more aggressive policy rules can marginally improve inflation outcomes, but at the expense of a larger negative output gap. 
 
 # Summary. An optional shortened abstract.
 summary: "A QPM Analysis of Hungary’s Post-2022 Inflation Episode"
 
 tags:
-- Large Language Models
+- Matlab
+- New Keynesian
 
 featured: true
 
@@ -35,29 +32,19 @@ hugoblox:
     arxiv: 1512.04133v1
 
 links:
-- type: preprint
+- type: pdf
   provider: arxiv
   id: 1512.04133v1
 - type: code
   url: https://github.com/HugoBlox/kit
-- type: slides
-  url: https://www.slideshare.net/
 - type: dataset
   url: "#"
-- type: poster
-  url: "#"
-- type: source
-  url: "#"
-- type: video
-  url: https://youtube.com
-- type: custom
-  label: Custom Link
-  url: http://example.org
+
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: 'Image credit: [**Unsplash**](https://infostart.hu/images/site/articles/lead/2024/04/1713871840-cufL4MkDU_md.jpg)'
   focal_point: ""
   preview_only: false
 
@@ -417,9 +404,3 @@ policy model (No. 2013/1)*. MNB Working Papers.
 ##  Appendix 
 The appendix is available in the pdf version.
 
-
-
-> [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
