@@ -1,5 +1,5 @@
 ---
-title: ":dna: Tokenisation financière : une révolution en marche, mais sur quels rails ?"
+title: "[🇫🇷 vers.] Tokenisation financière : une révolution en marche, mais sur quels rails ?"
 authors:
 - me
 date: "2025-07-19T00:00:00Z"
