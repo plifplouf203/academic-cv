@@ -3,7 +3,7 @@ title: "Monetary Policy in a Period of Rapid Disinflation"
 math: true
 authors:
 - me
-date: "2026-09"
+date: "2026-09-04T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2026-09-04T00:00:00Z"
