@@ -1,5 +1,5 @@
 ---
-title: ":flag-fr: Tokenisation financière : une révolution en marche, mais sur quels rails ?"
+title: ":dna: Tokenisation financière : une révolution en marche, mais sur quels rails ?"
 authors:
 - me
 author_notes:
