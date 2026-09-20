@@ -44,7 +44,7 @@ links:
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://infostart.hu/images/site/articles/lead/2024/04/1713871840-cufL4MkDU_md.jpg)'
+  caption: 'Image credit: [**Bloomberg**](https://infostart.hu/images/site/articles/lead/2024/04/1713871840-cufL4MkDU_md.jpg)'
   focal_point: ""
   preview_only: false
 
