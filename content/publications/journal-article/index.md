@@ -2,9 +2,6 @@
 title: ":dna: Tokenisation financière : une révolution en marche, mais sur quels rails ?"
 authors:
 - me
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
 date: "2025-07-19T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
