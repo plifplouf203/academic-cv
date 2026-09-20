@@ -1,5 +1,5 @@
 ---
-title: "Tokenisation financière : une révolution en marche, mais sur quels rails ?"
+title: "Tokenisation financière - une révolution en marche, mais sur quels rails ?"
 authors:
 - me
 author_notes:
