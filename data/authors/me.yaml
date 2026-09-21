@@ -43,10 +43,6 @@ education:
     start: 2025
     end: 
     summary: |
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
   - degree: MS European Economics
     institution: Tübingen Universität
     start: 2025
@@ -63,10 +59,6 @@ experience:
     end : 2025-06
     summary: |
       Studies and Distribution Department. Data analysis and literature review on the local Blue Economy
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
   - role: Summer Intern
     org: BNP Paribas PF
     start: 2025-09
