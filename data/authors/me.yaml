@@ -100,6 +100,14 @@ skills:
         level: 5
       - label: R
         level: 5
+  - name: Research & Communication
+    items:
+      - label: Competitive Tennis
+        level: 5
+      - label: Laser Run, Roundnet
+        level: 5
+      - label: Infrared Photography
+        level: 5
 languages:
   - name: French
     level: 5
