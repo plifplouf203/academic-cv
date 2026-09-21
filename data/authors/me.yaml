@@ -107,6 +107,6 @@ languages:
   - name: English
     level: 4
     label: B2
-- name: German
+  - name: German
     level: 3
     label: B1
