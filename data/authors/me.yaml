@@ -96,30 +96,17 @@ skills:
     items:
       - label: Python
         level: 5
-      - label: Machine Learning
+      - label: Matlab
         level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
+      - label: R
         level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-
 languages:
-  - name: English
+  - name: French
     level: 5
     label: Native
-  - name: Spanish
+  - name: English
     level: 4
-    label: Fluent
-
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+    label: B2
+- name: German
+    level: 3
+    label: B1
