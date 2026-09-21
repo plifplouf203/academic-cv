@@ -51,25 +51,9 @@ sections:
         featured_only: false
     design:
       view: article-grid
-      columns: 2
-  - block: hero
-    content:
-      title: "Your Name 👋"
-      text: "Master's Student in Economics & Finance"
-      # First Button (e.g., Academic CV)
-      cta:
-        label: Download Academic CV
-        url: uploads/academic-cv.pdf
-        icon: graduation-cap
-        icon_pack: fas
-      # Second Button (e.g., Professional CV)
-      cta_alt:
-        label: Download Professional CV
-        url: uploads/professional-cv.pdf
-        icon: briefcase
-        icon_pack: fas
+      columns: 2 
   - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
+    demo: false # Only display this section in the HugoBlox Kit demo site
     content:
       title: 👉 Build your own academic website like this
       text: |-
