@@ -91,23 +91,6 @@ experience:
     end: 2022-09
     summary: |
       Back-office. General administrative tasks.
-skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: Matlab
-        level: 5
-      - label: R
-        level: 5
-  - name: Research & Communication
-    items:
-      - label: Competitive Tennis
-        level: 5
-      - label: Laser Run, Roundnet
-        level: 5
-      - label: Infrared Photography
-        level: 5
 languages:
   - name: French
     level: 5
@@ -118,3 +101,20 @@ languages:
   - name: German
     level: 3
     label: B1
+skills:
+  - name: Technical Skills
+    items:
+      - label: Python
+        level: 5
+      - label: Matlab
+        level: 5
+      - label: R
+        level: 5
+  - name: Interests
+    items:
+      - label: Competitive Tennis
+        level: 5
+      - label: Laser Run, Roundnet
+        level: 5
+      - label: Infrared Photography
+        level: 5
