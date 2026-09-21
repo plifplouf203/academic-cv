@@ -19,8 +19,8 @@ sections:
         about: ''
         education: ''
         interests: ''
-    button:
-        text: Download CV (Français)
+      button:
+        text: Download CV [Français]
         url: uploads/resume.pdf
       headings:
         about: ''
