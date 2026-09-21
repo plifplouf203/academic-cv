@@ -19,13 +19,6 @@ sections:
         about: ''
         education: ''
         interests: ''
-      button:
-        text: Download CV [Français]
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
@@ -59,6 +52,22 @@ sections:
     design:
       view: article-grid
       columns: 2
+  - block: hero
+    content:
+      title: "Your Name 👋"
+      text: "Master's Student in Economics & Finance"
+      # First Button (e.g., Academic CV)
+      cta:
+        label: Download Academic CV
+        url: uploads/academic-cv.pdf
+        icon: graduation-cap
+        icon_pack: fas
+      # Second Button (e.g., Professional CV)
+      cta_alt:
+        label: Download Professional CV
+        url: uploads/professional-cv.pdf
+        icon: briefcase
+        icon_pack: fas
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
